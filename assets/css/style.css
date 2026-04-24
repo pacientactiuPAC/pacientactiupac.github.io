@@ -85,7 +85,6 @@ main p {
   padding: 14px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 16px;
 }
 
@@ -100,8 +99,7 @@ main p {
 .main-nav {
   display: flex;
   gap: 14px;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  margin-left: auto;   /* 👈 empeny el menú cap a la dreta */
 }
 
 .main-nav a {
@@ -222,6 +220,7 @@ main p {
 }
 
 .language-select {
+  margin-left: 10px;   /* separació del menú */
   border: 1px solid rgba(255,255,255,0.7);
   background: #ffffff;
   color: #1565C0;
