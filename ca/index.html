@@ -11,11 +11,19 @@
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="index.html">PACient Actiu (PAC)</a>
+
     <nav class="main-nav">
       <a href="index.html">Inici</a>
-      <a href="index.html#moduls">Mòduls</a>
+      <a href="#moduls">Mòduls</a>
       <a href="privacitat.html">Privacitat</a>
       <a href="disclaimer.html">Avís mèdic</a>
+
+      <select class="language-select" onchange="window.location.href=this.value">
+        <option value="index.html" selected>CA</option>
+        <option value="../es/index.html">ES</option>
+        <option value="../en/index.html">EN</option>
+        <option value="../eu/index.html">EU</option>
+      </select>
     </nav>
   </div>
 </header>
