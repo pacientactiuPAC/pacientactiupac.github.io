@@ -220,3 +220,13 @@ main p {
     grid-template-columns: 1fr;
   }
 }
+
+.language-select {
+  border: 1px solid rgba(255,255,255,0.7);
+  background: #ffffff;
+  color: #1565C0;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
