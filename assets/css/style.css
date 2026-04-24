@@ -33,3 +33,28 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.site-footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  background: #eef2f7;
+  border-top: 1px solid #d8dee8;
+  font-size: 14px;
+}
+
+.site-footer nav {
+  margin-top: 8px;
+}
+
+.site-footer a {
+  color: #1565C0;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
