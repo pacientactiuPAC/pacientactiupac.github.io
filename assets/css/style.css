@@ -58,3 +58,19 @@ a:hover {
 .site-footer a:hover {
   text-decoration: underline;
 }
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #0d47a1;
+}
+
+main p {
+  line-height: 1.6;
+}
+
