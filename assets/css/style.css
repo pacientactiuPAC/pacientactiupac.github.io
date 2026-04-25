@@ -574,7 +574,18 @@ main p {
   }
 
   .story-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  .story-card h3 {
+    font-size: 11px;
+    margin: 5px 0 3px;
+  }
+
+  .story-card p {
+    font-size: 9px;
+    line-height: 1.25;
   }
 
   .story-grid::before {
@@ -583,13 +594,15 @@ main p {
 
   .story-card,
   .story-card:nth-child(2) {
-    max-width: 260px;
+    max-width: 105px;
     margin: 0 auto;
     transform: none;
   }
 
   .story-card img {
-    max-width: 120px;
+    max-width: 62px;
+    padding: 3px;
+    border-radius: 16px;
   }
 
   .story-card:hover,
