@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Recuperació sexual - PACient Actiu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">PACient Actiu (PAC)</a>
+    <nav class="main-nav">
+      <a href="../index.html">Inici</a>
+      <a href="../index.html#moduls">Mòduls</a>
+      <a href="../privacitat.html">Privacitat</a>
+      <a href="../disclaimer.html">Avís mèdic</a>
+    </nav>
+    <select class="language-select" onchange="window.location.href=this.value">
+      <option value="../moduls/sexe.html" selected>CA</option>
+      <option value="../../es/moduls/sexe.html">ES</option>
+      <option value="../../en/moduls/sexe.html">EN</option>
+      <option value="../../eu/moduls/sexe.html">EU</option>
+    </select>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Recuperació sexual</h1>
+    <p>
+      Mòdul per registrar qüestionaris, incidències i evolució funcional durant
+      processos de recuperació o seguiment sexual.
+    </p>
+  </section>
+
+  <section>
+    <h2>Què permet registrar</h2>
+    <ul>
+      <li>Qüestionaris de seguiment funcional</li>
+      <li>Puntuació d’evolució</li>
+      <li>Incidències o canvis rellevants</li>
+      <li>Notes i observacions</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Què aporta</h2>
+    <p>
+      Facilita veure l’evolució al llarg del temps i ordenar informació que pot
+      ser útil en el seguiment clínic.
+    </p>
+  </section>
+
+  <section>
+    <h2>Informes i gràfics</h2>
+    <p>
+      El mòdul pot generar taules, gràfics d’evolució i informes PDF amb el resum
+      dels qüestionaris i incidències registrades.
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div>© PACient Actiu (PAC)</div>
+  <nav>
+    <a href="../index.html">Inici</a>
+    <span>·</span>
+    <a href="../privacitat.html">Política de privacitat</a>
+    <span>·</span>
+    <a href="../disclaimer.html">Avís mèdic</a>
+  </nav>
+</footer>
+
+</body>
+</html>
