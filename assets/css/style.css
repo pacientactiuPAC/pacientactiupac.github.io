@@ -538,13 +538,13 @@ main p {
   }
 
   .module-icons {
-    max-width: 240px;
-    gap: 4px;
+    max-width: 300px;
+    gap: 8px;
   }
 
   .module-icons img {
-    width: 40px;
-    height: 40px;
+    width: 52px;
+    height: 52px;
   }
 
   .modules-section {
@@ -623,4 +623,56 @@ main p {
   .story-card:nth-child(2):hover {
     transform: none;
   }
+
+  .value-card {
+    max-width: 900px;
+    margin: 14px 12px;
+    padding: 20px 16px;
+    background: #ffffff;
+    border-left: 6px solid #1565C0;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  }
+
+  .value-card h2 {
+    margin-top: 0;
+  }
+
+  .value-card p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .modules-section h2,
+  .hero h1,
+  .value-card h2,
+  .screenshots h2 {
+    color: #1565C0;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .modules-section {
+    margin: 10px auto 0;
+    padding: 8px 12px;
+  }
+
+  .hero {
+    margin: 16px auto 12px;
+  }
+
+  .value-card {
+    margin: 12px auto;
+    text-align: left;
+  }
+
+  .value-card h2 {
+    margin-bottom: 12px;
+  }
+
+  .screenshots {
+    margin: 24px auto;
+  }
+
+  
 }
