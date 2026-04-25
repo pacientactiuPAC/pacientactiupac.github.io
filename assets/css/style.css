@@ -455,24 +455,24 @@ main p {
 @media (max-width: 900px) {
   .story-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    gap: 10px;
   }
 
   .story-card {
-    max-width: 210px;
-    padding: 12px;
+    max-width: 180px;
+    padding: 10px;
   }
 
   .story-card img {
-    max-width: 115px;
+    max-width: 95px;
   }
 
   .story-card h3 {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .story-card p {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .module-grid {
