@@ -401,3 +401,54 @@ main p {
   width: 100%;
   display: block;
 }
+
+.module-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.module-icons img {
+  width: 60px;
+  height: 60px;
+  opacity: 0.9;
+  transition: transform 0.2s ease;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+}
+
+.module-icons img:hover {
+  transform: scale(1.1);
+}
+
+.modules-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.modules-section h2 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.module-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.module-icons img {
+  width: 70px;
+  height: 70px;
+  opacity: 0.95;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.12));
+  cursor: pointer;
+}
+
+.module-icons img:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
