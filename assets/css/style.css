@@ -564,10 +564,20 @@ main p {
 .story-card img {
   width: 100%;
   max-width: 230px;
-  border-radius: 22px;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
   display: block;
   margin: 0 auto 16px;
+
+  border-radius: 28px;               /* més rodó = look mòbil */
+  padding: 6px;                      /* separació interna */
+  background: #111;                  /* marc negre suau */
+
+  box-shadow: 
+    0 12px 28px rgba(0,0,0,0.25),    /* ombra externa */
+    inset 0 0 0 2px rgba(255,255,255,0.08); /* toc interior */
+}
+
+.story-card img:hover {
+  transform: scale(1.03);
 }
 
 .story-card h3 {
