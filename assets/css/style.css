@@ -396,3 +396,8 @@ main p {
     grid-template-columns: 1fr;
   }
 }
+
+.banner img {
+  width: 100%;
+  display: block;
+}
