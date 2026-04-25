@@ -403,10 +403,13 @@ main p {
 }
 
 .module-icons {
-  display: flex;
-  justify-content: center;
-  gap: 28px;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 320px;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
 }
 
 .module-icons img {
@@ -430,27 +433,6 @@ main p {
   font-size: 18px;
   color: #2c3e50;
   margin-bottom: 12px;
-}
-
-.module-icons {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.module-icons img {
-  width: 70px;
-  height: 70px;
-  opacity: 0.95;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.12));
-  cursor: pointer;
-}
-
-.module-icons img:hover {
-  transform: scale(1.15);
-  opacity: 1;
 }
 
 .logo {
@@ -609,13 +591,42 @@ main p {
   line-height: 1.5;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
+  .story-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .story-card {
+    max-width: 220px;
+    padding: 12px;
+  }
+
+  .story-card img {
+    max-width: 120px;
+  }
+
+  .story-card h3 {
+    font-size: 15px;
+  }
+
+  .story-card p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 560px) {
   .story-grid {
     grid-template-columns: 1fr;
   }
 
   .story-card {
-    max-width: 340px;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .story-card img {
+    max-width: 125px;
   }
 }
 
