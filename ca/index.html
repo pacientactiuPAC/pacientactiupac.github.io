@@ -9,20 +9,16 @@
 <body>
 
 <header class="site-header">
-  <div class="logo">
-    <a href="index.html">
-      <img src="../assets/img/icons/pac.png" alt="PAC logo">
-    </a>
-    <span>PACient Actiu (PAC)</span>
-  </div>
-
   <div class="header-inner">
-    
-    <a class="brand brand-with-logo" href="index.html">
+
+    <a class="brand" href="index.html">
       <img src="../assets/img/icons/pac.png" alt="PAC">
-      <span>PACient Actiu (PAC)</span>
+      <span class="brand-text-wrap">
+        <span class="brand-text">PacientACtiu</span>
+        <span class="brand-subtitle">Seguiment clínic basat en PROM</span>
+      </span>
     </a>
-    
+
     <nav class="main-nav">
       <a href="index.html">Inici</a>
       <a href="index.html#moduls">Mòduls</a>
@@ -39,39 +35,55 @@
 
   </div>
 </header>
-  
+
 <section class="banner">
   <img src="../assets/img/banner.png" alt="PAC banner">
 </section>
 
-<<section class="modules-section">
+<section class="modules-section">
   <h2>Mòduls disponibles</h2>
 
   <div class="module-icons">
-    <a href="moduls/uro.html">
-      <img src="../assets/img/icons/uro.png" alt="Urologia">
-    </a>
-
-    <a href="moduls/femtes.html">
-      <img src="../assets/img/icons/femtes.png" alt="Femtes">
-    </a>
-
-    <a href="moduls/kegel.html">
-      <img src="../assets/img/icons/kegel.png" alt="Kegel">
-    </a>
-
-    <a href="moduls/sexe.html">
-      <img src="../assets/img/icons/sexe.png" alt="Recuperació sexual">
-    </a>
+    <a href="moduls/uro.html"><img src="../assets/img/icons/uro.png" alt="Urologia"></a>
+    <a href="moduls/femtes.html"><img src="../assets/img/icons/femtes.png" alt="Femtes"></a>
+    <a href="moduls/kegel.html"><img src="../assets/img/icons/kegel.png" alt="Kegel"></a>
+    <a href="moduls/sexe.html"><img src="../assets/img/icons/sexe.png" alt="Recuperació sexual"></a>
   </div>
 </section>
 
 <section class="hero">
   <h1>PACient Actiu (PAC)</h1>
   <p>
-    Eina per registrar dades de salut, seguir-ne l’evolució i generar informes
+    Eina PROM per registrar dades de salut, seguir-ne l’evolució i generar informes
     útils per compartir amb professionals sanitaris.
   </p>
+</section>
+
+<section class="screenshots">
+  <h2>De les dades a l’informe</h2>
+  <p class="screenshots-intro">
+    PAC acompanya el pacient en tot el procés: registre diari, visualització de l’evolució i generació d’informes.
+  </p>
+
+  <div class="story-grid">
+    <article class="story-card">
+      <img src="../assets/img/screens/reg_uro.png" alt="Registre de dades">
+      <h3>1. Registra</h3>
+      <p>Introdueix dades diàries de forma senzilla i estructurada.</p>
+    </article>
+
+    <article class="story-card">
+      <img src="../assets/img/screens/graf_uro.png" alt="Gràfics d’evolució">
+      <h3>2. Visualitza</h3>
+      <p>Consulta gràfics i tendències per entendre l’evolució.</p>
+    </article>
+
+    <article class="story-card">
+      <img src="../assets/img/screens/info_uro.png" alt="Informes">
+      <h3>3. Informa</h3>
+      <p>Genera informes útils per compartir amb professionals sanitaris.</p>
+    </article>
+  </div>
 </section>
 
 <section class="cards">
@@ -90,33 +102,13 @@
     <p>Dades ordenades, gràfics d’evolució i informes PDF per facilitar el seguiment.</p>
   </article>
 </section>
-  
+
 <section class="workflow">
   <h2>Com funciona</h2>
   <p class="workflow-intro">
     PAC segueix un procés senzill: registrar dades, veure’n l’evolució i generar informes.
   </p>
 
-  <section class="results">
-    <h2>Evolució i seguiment</h2>
-    <p class="results-intro">
-      PAC permet visualitzar l’evolució de les dades amb gràfics clars
-      que ajuden a entendre el progrés del pacient.
-    </p>
-  
-    <div class="results-grid">
-      <div class="result-card">
-        <img src="../assets/img/chart1.png" alt="Gràfic evolució">
-        <p>Evolució de la puntuació en el temps</p>
-      </div>
-  
-      <div class="result-card">
-        <img src="../assets/img/chart2.png" alt="Components">
-        <p>Anàlisi de components clau</p>
-      </div>
-    </div>
-  </section>
-  
   <div class="workflow-steps">
     <article class="step">
       <div class="step-number">1</div>
@@ -138,6 +130,26 @@
   </div>
 </section>
 
+<section class="results">
+  <h2>Evolució i seguiment</h2>
+  <p class="results-intro">
+    PAC permet visualitzar l’evolució de les dades amb gràfics clars
+    que ajuden a entendre el progrés del pacient.
+  </p>
+
+  <div class="results-grid">
+    <div class="result-card">
+      <img src="../assets/img/chart1.png" alt="Gràfic evolució">
+      <p>Evolució de la puntuació en el temps</p>
+    </div>
+
+    <div class="result-card">
+      <img src="../assets/img/chart2.png" alt="Components">
+      <p>Anàlisi de components clau</p>
+    </div>
+  </div>
+</section>
+
 <section id="moduls" class="modules">
   <h2>Mòduls</h2>
   <p class="modules-intro">
@@ -145,24 +157,24 @@
   </p>
 
   <div class="module-grid">
-      <a class="module-card module-link" href="moduls/uro.html">
-       <div class="module-icon">💧</div>
-       <h3>Diari miccional</h3>
-       <p>Registre d’ingesta, miccions, pèrdues i evolució del control urinari.</p>
-     </a>
+    <a class="module-card module-link" href="moduls/uro.html">
+      <div class="module-icon">💧</div>
+      <h3>Diari miccional</h3>
+      <p>Registre d’ingesta, miccions, pèrdues i evolució del control urinari.</p>
+    </a>
 
-     <a class="module-card module-link" href="moduls/femtes.html">
+    <a class="module-card module-link" href="moduls/femtes.html">
       <div class="module-icon">🌿</div>
       <h3>Diari intestinal</h3>
       <p>Seguiment de deposicions, tipus Bristol i evolució intestinal.</p>
     </a>
-    
+
     <a class="module-card module-link" href="moduls/kegel.html">
       <div class="module-icon">⏱️</div>
       <h3>Exercicis de Kegel</h3>
       <p>Registre i seguiment de sessions d’exercicis del sòl pelvià.</p>
     </a>
-    
+
     <a class="module-card module-link" href="moduls/sexe.html">
       <div class="module-icon">💜</div>
       <h3>Recuperació sexual</h3>
@@ -191,23 +203,21 @@
     </div>
   </div>
 </section>
-  
+
 <footer class="site-footer">
   <div>© PACient Actiu (PAC)</div>
 
   <nav>
-    <a href="../index.html">Inici</a>
+    <a href="index.html">Inici</a>
     <span>·</span>
-    <a href="../privacitat.html">Política de privacitat</a>
+    <a href="privacitat.html">Política de privacitat</a>
     <span>·</span>
-    <a href="../disclaimer.html">Avís mèdic</a>
+    <a href="disclaimer.html">Avís mèdic</a>
   </nav>
 
   <div class="contact">
-    Contacte: 
-    <a href="mailto:pacientactiu.app@gmail.com">
-      pacientactiu.app@gmail.com
-    </a>
+    Contacte:
+    <a href="mailto:pacientactiu.app@gmail.com">pacientactiu.app@gmail.com</a>
   </div>
 
   <div class="contact-note">
