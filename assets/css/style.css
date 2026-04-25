@@ -229,3 +229,57 @@ main p {
   padding: 5px 8px;
   cursor: pointer;
 }
+
+.modules {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 28px 20px;
+  text-align: center;
+}
+
+.modules-intro {
+  color: #555;
+  max-width: 720px;
+  margin: 0 auto 24px;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.module-card {
+  background: white;
+  border-radius: 16px;
+  padding: 22px 18px;
+  border: 1px solid #e3e8f0;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.module-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.module-card h3 {
+  color: #0d47a1;
+  margin: 8px 0;
+}
+
+.module-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .module-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .module-grid {
+    grid-template-columns: 1fr;
+  }
+}
