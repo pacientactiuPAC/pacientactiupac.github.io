@@ -301,3 +301,15 @@ main p {
     grid-template-columns: 1fr;
   }
 }
+
+.module-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.module-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+}
+
