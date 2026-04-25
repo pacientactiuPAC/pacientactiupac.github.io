@@ -452,3 +452,17 @@ main p {
   transform: scale(1.15);
   opacity: 1;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+}
