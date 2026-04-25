@@ -574,19 +574,23 @@ main p {
   }
 
   .story-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6px;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .story-card h3 {
-    font-size: 11px;
-    margin: 5px 0 3px;
+    grid-column: 1;
+    font-size: 16px;
+    margin: 0 0 4px;
   }
 
   .story-card p {
-    font-size: 9px;
-    line-height: 1.25;
+    grid-column: 1;
+    font-size: 13px;
+    line-height: 1.35;
+    margin: 0;
   }
+
 
   .story-grid::before {
     display: none;
@@ -594,19 +598,29 @@ main p {
 
   .story-card,
   .story-card:nth-child(2) {
-    max-width: 105px;
-    margin: 0 auto;
+    max-width: none;
+    width: auto;
+    margin: 0;
+    padding: 12px;
     transform: none;
+    display: grid;
+    grid-template-columns: 1fr 86px;
+    gap: 12px;
+    align-items: center;
+    text-align: left;
   }
 
   .story-card img {
-    max-width: 62px;
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    max-width: 72px;
     padding: 3px;
     border-radius: 16px;
+    margin: 0;
   }
 
   .story-card:hover,
   .story-card:nth-child(2):hover {
-    transform: translateY(-4px);
+    transform: none;
   }
 }
