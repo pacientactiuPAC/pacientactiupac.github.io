@@ -104,17 +104,63 @@ a:hover {
   text-decoration: underline;
 }
 
-.language-select {
+/* Language Menu */
+
+.lang-menu {
+  position: relative;
   margin-left: 6px;
-  border: 1px solid rgba(255,255,255,0.7);
-  background: #ffffff;
-  color: #1565C0;
-  font-weight: 700;
-  border-radius: 8px;
-  padding: 5px 8px;
-  cursor: pointer;
+  flex-shrink: 0;
 }
 
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.45);
+  color: white;
+  border-radius: 10px;
+  padding: 6px 9px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.lang-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+  overflow: hidden;
+  min-width: 120px;
+  z-index: 2000;
+}
+
+.lang-dropdown a {
+  display: block;
+  padding: 9px 12px;
+  color: #1565C0;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.lang-dropdown a:hover {
+  background: #f1f5f9;
+}
+
+.lang-menu.open .lang-dropdown {
+  display: block;
+}
 /* BANNER */
 
 .banner {
@@ -157,8 +203,22 @@ a:hover {
 
 .module-icons a {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #0d47a1;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.module-icons a:hover {
+  text-decoration: none;
+}
+
+.module-icons span {
+  line-height: 1.1;
 }
 
 .module-icons img {
@@ -174,6 +234,119 @@ a:hover {
 }
 
 /* HERO */
+.module-hero {
+  max-width: 900px;
+  margin: 18px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.module-hero img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.module-hero h1 {
+  color: #1565C0;
+  margin: 0 0 8px;
+}
+
+.module-hero p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* REFERENCIES */
+.module-content {
+  max-width: 900px;
+  margin: 18px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.module-content h2 {
+  color: #1565C0;
+  margin-top: 22px;
+}
+
+.module-content p {
+  line-height: 1.6;
+}
+
+.module-content ul {
+  padding-left: 20px;
+}
+
+.module-content li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.disclaimer-small {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #e3e8f0;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+  font-style: italic;
+  background: transparent;
+}
+
+.disclaimer-small::before {
+  content: "* ";
+  font-weight: bold;
+  color: #444;
+}
+
+@media (max-width: 640px) {
+  .module-content {
+    margin: 12px;
+    padding: 18px 16px;
+  }
+}
+
+.clinical-list,
+.refs {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.clinical-list li,
+.refs li {
+  margin-bottom: 8px;
+}
+
+.refs a {
+  color: #1565C0;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.refs a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .module-hero {
+    padding: 18px;
+    gap: 14px;
+  }
+
+  .module-hero img {
+    width: 64px;
+    height: 64px;
+  }
+}
 
 .hero {
   max-width: 900px;
@@ -295,11 +468,11 @@ a:hover {
 .story-card h3 {
   color: #0d47a1;
   margin: 8px 0 6px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .story-card p {
-  font-size: 13px;
+  font-size: 14px;
   color: #555;
   line-height: 1.45;
 }
@@ -472,11 +645,11 @@ main p {
   }
 
   .story-card h3 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .story-card p {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .module-grid {
@@ -510,11 +683,6 @@ main p {
 
   .brand-subtitle {
     font-size: 10px;
-  }
-
-  .language-select {
-    margin-left: auto;
-    padding: 4px 7px;
   }
 
   .main-nav {
@@ -586,13 +754,13 @@ main p {
 
   .story-card h3 {
     grid-column: 1;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0 0 4px;
   }
 
   .story-card p {
     grid-column: 1;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.35;
     margin: 0;
   }

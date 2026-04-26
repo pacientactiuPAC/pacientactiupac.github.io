@@ -26,24 +26,97 @@
       <a href="../disclaimer.html">Avís mèdic</a>
     </nav>
 
-    <select class="language-select" onchange="window.location.href=this.value">
-      <option value="index.html" selected>CA</option>
-      <option value="../es/index.html">ES</option>
-      <option value="../en/index.html">EN</option>
-      <option value="../eu/index.html">EU</option>
-    </select>
+     <div class="lang-menu">
+      <button class="lang-btn" aria-label="Canviar idioma">
+        <svg class="lang-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm0 2c1.1 1.3 1.8 3 2.1 5H9.9c.3-2 1-3.7 2.1-5Zm-4.1.9A12.5 12.5 0 0 0 6.9 9H4.3a8 8 0 0 1 3.6-4.1ZM4 12c0-.3 0-.7.1-1h2.6a14.8 14.8 0 0 0 0 2H4.1A8.2 8.2 0 0 1 4 12Zm.3 3h2.6c.2 1.5.5 2.9 1 4.1A8 8 0 0 1 4.3 15Zm7.7 5c-1.1-1.3-1.8-3-2.1-5h4.2c-.3 2-1 3.7-2.1 5Zm2.4-7H9.6a12.7 12.7 0 0 1 0-2h4.8a12.7 12.7 0 0 1 0 2Zm1.7 6.1c.5-1.2.8-2.6 1-4.1h2.6a8 8 0 0 1-3.6 4.1ZM17.3 13a14.8 14.8 0 0 0 0-2h2.6a8.2 8.2 0 0 1 0 2h-2.6Zm-.2-4c-.2-1.5-.5-2.9-1-4.1A8 8 0 0 1 19.7 9h-2.6Z"/>
+        </svg>
+        <span>CA</span>
+      </button>
+
+      <div class="lang-dropdown">
+        <a href="index.html">Català</a>
+        <a href="../es/index.html">Español</a>
+        <a href="../en/index.html">English</a>
+        <a href="../eu/index.html">Euskara</a>
+      </div>
+    </div>
 
   </div>
 </header>
 
 <main class="container">
 
-  <section class="hero">
-    <h1>Diari miccional</h1>
+  <section class="module-hero">
+    <img src="../../assets/img/icons/uro.png" alt="Urologia">
+    <div>
+      <h1>Diari miccional</h1>
+      <p>
+        Registre d’ingesta, miccions, pèrdues i evolució del control urinari.
+      </p>
+    </div>
+  </section>
+
+  <section class="module-content">
+
+    <h2>Què avalua aquest mòdul</h2>
     <p>
-      Mòdul per registrar i seguir l’evolució de la ingesta, les miccions,
-      les pèrdues i altres dades relacionades amb el control urinari.
+      Aquest mòdul permet fer un seguiment de la funció sexual durant processos
+      de recuperació, especialment en contextos urològics o postquirúrgics.
     </p>
+
+    <p>
+      El registre continu facilita detectar canvis, valorar l’evolució i
+      disposar d’informació estructurada per al seguiment clínic.
+    </p>
+
+    <h2>Base clínica</h2>
+
+    <p>
+      El disseny del mòdul es basa en qüestionaris validats utilitzats en la
+      pràctica clínica:
+    </p>
+
+    <ul class="clinical-list">
+      <li>
+        <strong>IIEF-5</strong> (International Index of Erectile Function):
+        qüestionari utilitzat per avaluar la funció erèctil en homes.
+      </li>
+      <li>
+        <strong>FSFI</strong> (Female Sexual Function Index):
+        eina per avaluar diferents dimensions de la funció sexual en dones.
+      </li>
+    </ul>
+
+    <p>
+      PAC adapta aquests conceptes per facilitar-ne l’ús en el seguiment diari,
+      mantenint un enfocament orientat al pacient (PROM).
+    </p>
+
+    <h2>Referències</h2>
+
+    <ul class="refs">
+      <li>
+        <a href="https://www.auanet.org/" target="_blank">
+          American Urological Association
+        </a>
+      </li>
+      <li>
+        <a href="https://uroweb.org/" target="_blank">
+          European Association of Urology
+        </a>
+      </li>
+      <li>
+        <a href="https://www.who.int/" target="_blank">
+          World Health Organization
+        </a>
+      </li>
+    </ul>
+
+    <p class="disclaimer-small">
+      Aquesta aplicació no substitueix el criteri mèdic professional.
+    </p>
+    
   </section>
 
   <section>
@@ -73,7 +146,11 @@
     </p>
   </section>
 
+  
+
 </main>
+
+
 
 <footer class="site-footer">
   <div>© PACient Actiu (PAC)</div>
