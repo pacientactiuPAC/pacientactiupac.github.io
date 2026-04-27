@@ -23,7 +23,7 @@
       <a href="../index.html">Inici</a>
       <a href="../index.html#moduls">Mòduls</a>
       <a href="../privacitat.html">Privacitat</a>
-      <a href="../disclaimer.html">Avís mèdic</a>
+      <a href="../disclaimer.html">Avís legal</a>
     </nav>
 
      <div class="lang-menu">
@@ -35,21 +35,46 @@
       </button>
 
       <div class="lang-dropdown">
-        <a href="index.html">Català</a>
-        <a href="../es/index.html">Español</a>
-        <a href="../en/index.html">English</a>
-        <a href="../eu/index.html">Euskara</a>
+        <a href="#" data-lang="ca">Català</a>
+        <a href="#" data-lang="es">Español</a>
+        <a href="#" data-lang="en">English</a>
+        <a href="#" data-lang="eu">Euskara</a>
       </div>
     </div>
   </div>
 </header>
 
 <main class="container">
+  
+  <section class="modules-section module-switcher">
+    <div class="module-icons">
+      <a href="uro.html">
+        <img src="../../assets/img/icons/uro.png" alt="Urologia">
+        <span>Urologia</span>
+      </a>
+
+      <a href="femtes.html">
+        <img src="../../assets/img/icons/femtes.png" alt="Intestinal">
+        <span>Intestinal</span>
+      </a>
+
+      <a href="kegel.html">
+        <img src="../../assets/img/icons/kegel.png" alt="Kegel">
+        <span>Kegel</span>
+      </a>
+
+      <a href="sexe.html"class="active">
+        <img src="../../assets/img/icons/sexe.png" alt="Sexual">
+        <span>Sexual</span>
+      </a>
+    </div>
+  </section>
+
   <section class="module-hero">
     <img src="../../assets/img/icons/sexe.png" alt="Recuperació sexual">
     <div>
-      <h1>Recuperació sexual</h1>
-      <p>
+      <h1 data-i18n="sexe_title">Recuperació sexual</h1>
+      <p data-i18n="sexe_subtitle">
         Qüestionaris, incidències i evolució funcional durant la recuperació.
       </p>
     </div>
@@ -57,33 +82,33 @@
 
   <section class="module-content">
 
-  <h2>Què permet registrar</h2>
-  <p>
+ <h2 data-i18n="module_register_title">Què permet registrar</h2>
+  <p data-i18n="sexe_register_text">
     El mòdul de recuperació sexual permet registrar qüestionaris de seguiment,
     incidències i observacions relacionades amb l’evolució funcional durant un
     procés clínic o de recuperació.
   </p>
 
   <ul>
-    <li>Qüestionaris de seguiment funcional.</li>
-    <li>Registres amb o sense activitat sexual.</li>
-    <li>Puntuació global d’evolució.</li>
-    <li>Incidències, canvis de tractament o observacions rellevants.</li>
+    <li data-i18n="sexe_register_item_1"></li>
+    <li data-i18n="sexe_register_item_2"></li>
+    <li data-i18n="sexe_register_item_3"></li>
+    <li data-i18n="sexe_register_item_4"></li>
   </ul>
 
-  <h2>Què aporta al seguiment</h2>
-  <p>
+  <h2 data-i18n="module_followup_title">Què aporta al seguiment</h2>
+  <p  data-i18n="sexe_followup_text_1">
     El registre periòdic ajuda a observar tendències, detectar canvis i disposar
     d’informació estructurada per comentar amb professionals sanitaris.
   </p>
 
-  <p>
+  <p data-i18n="sexe_followup_text_2">
     L’objectiu no és substituir una valoració clínica, sinó facilitar que el
     pacient pugui participar de forma activa en el seguiment de la seva recuperació.
   </p>
 
-  <h2>Base clínica</h2>
-  <p>
+  <h2 data-i18n="module_clinical_title">Base clínica</h2>
+  <p data-i18n="sexe_clinical_text_1">
     El disseny conceptual del mòdul pren com a referència qüestionaris utilitzats
     en l’àmbit clínic, com l’<button class="term-link" data-term="iief5">IIEF-5</button> en homes i el <button class="term-link" data-term="fsfi">FSFI</button> en dones. El qüestionari
     IIEF és un instrument autoadministrat utilitzat per valorar la funció erèctil,
@@ -92,38 +117,38 @@
     femenina, com desig, excitació, lubricació, orgasme, satisfacció i dolor.
   </p>
 
-  <p>
+  <p data-i18n="sexe_clinical_text_2">
     PAC no reprodueix aquests qüestionaris com a eina diagnòstica oficial, sinó
     que utilitza una estructura pròpia de seguiment basada en preguntes simples,
     puntuacions i evolució temporal.
   </p>
 
-  <h2>Informes i gràfics</h2>
-  <p>
+  <h2 data-i18n="module_reports_title">Informes i gràfics</h2>
+  <p data-i18n="sexe_reports_text">
     Les dades registrades es poden consultar mitjançant gràfics d’evolució i
     informes PDF, pensats per resumir la informació del període seleccionat.
   </p>
 
-  <h2>Referències</h2>
+  <h2 data-i18n="module_refs_title">Referències</h2>
   <ul class="refs">
     <li>
-      <a href="https://www.auanet.org/" target="_blank" rel="noopener">
-        American Urological Association
+      <a href="https://uroweb.org/guidelines/sexual-and-reproductive-health" target="_blank">
+        European Association of Urology · Sexual Health
       </a>
     </li>
     <li>
-      <a href="https://uroweb.org/guidelines/sexual-and-reproductive-health" target="_blank" rel="noopener">
-        European Association of Urology · Sexual and Reproductive Health Guidelines
-      </a>
-    </li>
-    <li>
-      <a href="https://pubmed.ncbi.nlm.nih.gov/9187685/" target="_blank" rel="noopener">
+      <a href="https://pubmed.ncbi.nlm.nih.gov/9187685/" target="_blank">
         Rosen et al. · International Index of Erectile Function
       </a>
     </li>
     <li>
-      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2872178/" target="_blank" rel="noopener">
-        Female Sexual Function Index · validació i ús clínic
+      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2872178/" target="_blank">
+        Female Sexual Function Index
+      </a>
+    </li>
+    <li>
+      <a href="https://www.aeu.es/" target="_blank">
+        Asociación Española de Urología
       </a>
     </li>
   </ul>
@@ -139,22 +164,12 @@
 <footer class="site-footer">
   <div>© PACient Actiu (PAC)</div>
 
-  <nav>
-    <a href="../index.html">Inici</a>
-    <span>·</span>
-    <a href="../privacitat.html">Política de privacitat</a>
-    <span>·</span>
-    <a href="../disclaimer.html">Avís mèdic</a>
-  </nav>
-
-  <div class="contact">
-    Contacte: 
-    <a href="mailto:pacientactiu.app@gmail.com">
-      pacientactiu.app@gmail.com
-    </a>
+   <div class="contact" data-i18n="footer_contact">
+    Contacte:
+    <a href="mailto:pacientactiu.app@gmail.com">pacientactiu.app@gmail.com</a>
   </div>
 
-  <div class="contact-note">
+  <div class="contact-note" data-i18n="footer_contact_note">
     Pots enviar suggeriments, informar de problemes o fer consultes.
   </div>
 </footer>
@@ -166,7 +181,41 @@
     <p id="term-text"></p>
   </div>
 </div>  
-<script src="../../assets/js/terms.js"></script>
+<script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/terms.js"></script>
+<script>
+  const btn = document.querySelector('.lang-btn');
+  const menu = document.querySelector('.lang-dropdown');
+  const langLabel = document.querySelector('.lang-btn span');
 
+  btn.onclick = (e) => {
+    e.stopPropagation();
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  };
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.lang-menu')) {
+      menu.style.display = 'none';
+    }
+  });
+
+  const lang = localStorage.getItem("lang") || "ca";
+  applyTranslations(lang).then(() => initTermLinks());
+  if (langLabel) langLabel.textContent = lang.toUpperCase();
+
+  document.querySelectorAll(".lang-dropdown a").forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const newLang = link.getAttribute("data-lang");
+      localStorage.setItem("lang", newLang);
+
+      applyTranslations(newLang).then(() => initTermLinks());
+      if (langLabel) langLabel.textContent = newLang.toUpperCase();
+
+      menu.style.display = 'none';
+    });
+  });
+</script>
 </body>
 </html>

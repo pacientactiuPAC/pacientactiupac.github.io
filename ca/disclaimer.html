@@ -2,7 +2,7 @@
 <html lang="ca">
 <head>
   <meta charset="UTF-8">
-  <title>Avís mèdic - PACient Actiu</title>
+  <title>Avís legal - PACient Actiu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -15,7 +15,7 @@
       <img src="../assets/img/icons/pac.png" alt="PAC">
       <span class="brand-text-wrap">
         <span class="brand-text">PacientACtiu</span>
-        <span class="brand-subtitle">Avis mèdic</span>
+        <span class="brand-subtitle">Avís legal</span>
       </span>
     </a>
 
@@ -23,7 +23,7 @@
       <a href="index.html">Inici</a>
       <a href="index.html#moduls">Mòduls</a>
       <a href="privacitat.html">Privacitat</a>
-      <a href="disclaimer.html">Avís mèdic</a>
+      <a href="disclaimer.html">Avís legal</a>
     </nav>
 
      <div class="lang-menu">
@@ -35,10 +35,10 @@
       </button>
 
       <div class="lang-dropdown">
-        <a href="index.html">Català</a>
-        <a href="../es/index.html">Español</a>
-        <a href="../en/index.html">English</a>
-        <a href="../eu/index.html">Euskara</a>
+        <a href="#" data-lang="ca">Català</a>
+        <a href="#" data-lang="es">Español</a>
+        <a href="#" data-lang="en">English</a>
+        <a href="#" data-lang="eu">Euskara</a>
       </div>
     </div>
 
@@ -46,7 +46,7 @@
 </header>
 
 <main class="container">  
-<h2>Avís mèdic</h2>
+<h2>Avís legal</h2>
 
 <p>
 PACient Actiu (PAC) és una eina de suport per al registre, seguiment i visualització
@@ -80,28 +80,62 @@ de la informació generada per l’aplicació.
 </p>
 
 </main>
+
 <footer class="site-footer">
   <div>© PACient Actiu (PAC)</div>
 
-  <nav>
-    <a href="../index.html">Inici</a>
-    <span>·</span>
-    <a href="../privacitat.html">Política de privacitat</a>
-    <span>·</span>
-    <a href="../disclaimer.html">Avís mèdic</a>
-  </nav>
-
-  <div class="contact">
-    Contacte: 
-    <a href="mailto:pacientactiu.app@gmail.com">
-      pacientactiu.app@gmail.com
-    </a>
+   <div class="contact" data-i18n="footer_contact">
+    Contacte:
+    <a href="mailto:pacientactiu.app@gmail.com">pacientactiu.app@gmail.com</a>
   </div>
 
-  <div class="contact-note">
+  <div class="contact-note" data-i18n="footer_contact_note">
     Pots enviar suggeriments, informar de problemes o fer consultes.
   </div>
 </footer>
-  
+
+<div id="term-modal" class="term-modal" hidden>
+  <div class="term-modal-box">
+    <button class="term-close" aria-label="Tancar">×</button>
+    <h3 id="term-title"></h3>
+    <p id="term-text"></p>
+  </div>
+</div>  
+<script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/terms.js"></script>
+<script>
+  const btn = document.querySelector('.lang-btn');
+  const menu = document.querySelector('.lang-dropdown');
+  const langLabel = document.querySelector('.lang-btn span');
+
+  btn.onclick = (e) => {
+    e.stopPropagation();
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  };
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.lang-menu')) {
+      menu.style.display = 'none';
+    }
+  });
+
+  const lang = localStorage.getItem("lang") || "ca";
+  applyTranslations(lang).then(() => initTermLinks());
+  if (langLabel) langLabel.textContent = lang.toUpperCase();
+
+  document.querySelectorAll(".lang-dropdown a").forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const newLang = link.getAttribute("data-lang");
+      localStorage.setItem("lang", newLang);
+
+      applyTranslations(newLang).then(() => initTermLinks());
+      if (langLabel) langLabel.textContent = newLang.toUpperCase();
+
+      menu.style.display = 'none';
+    });
+  });
+</script>  
 </body>
 </html>

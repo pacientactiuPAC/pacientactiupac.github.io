@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
   <meta charset="UTF-8">
   <title>PACient Actiu</title>
@@ -8,23 +9,24 @@
 </head>
 
 <body>
-
 <header class="site-header">
   <div class="header-inner">
 
     <a class="brand" href="index.html">
       <img src="../assets/img/icons/pac.png" alt="PAC">
       <span class="brand-text-wrap">
-        <span class="brand-text">PacientACtiu</span>
-        <span class="brand-subtitle">Seguiment clínic basat en PROM</span>
+        <span class="brand-text" data-i18n="brand_name">PacientACtiu</span>
+        <span class="brand-subtitle" data-i18n="brand_subtitle">
+          Seguiment clínic basat en PROM
+        </span>
       </span>
     </a>
 
     <nav class="main-nav">
-      <a href="index.html">Inici</a>
-      <a href="index.html#moduls">Mòduls</a>
-      <a href="privacitat.html">Privacitat</a>
-      <a href="disclaimer.html">Avís mèdic</a>
+      <a href="index.html" data-i18n="menu_home">Inici</a>
+      <a href="index.html#moduls" data-i18n="menu_modules">Mòduls</a>
+      <a href="privacitat.html" data-i18n="menu_privacy">Privacitat</a>
+      <a href="disclaimer.html" data-i18n="menu_legal">Avís legal</a>
     </nav>
 
     <div class="lang-menu">
@@ -36,30 +38,16 @@
       </button>
 
       <div class="lang-dropdown">
-        <a href="index.html">Català</a>
-        <a href="../es/index.html">Español</a>
-        <a href="../en/index.html">English</a>
-        <a href="../eu/index.html">Euskara</a>
+        <a href="#" data-lang="ca">Català</a>
+        <a href="#" data-lang="es">Español</a>
+        <a href="#" data-lang="en">English</a>
+        <a href="#" data-lang="eu">Euskara</a>
       </div>
+
     </div>
 
   </div>
 </header>
-
-<script>
-  const btn = document.querySelector('.lang-btn');
-  const menu = document.querySelector('.lang-dropdown');
-
-  btn.onclick = () => {
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-  };
-
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.lang-menu')) {
-      menu.style.display = 'none';
-    }
-  });
-</script>
 
 <section class="banner">
   <img src="../assets/img/banner.png" alt="PAC banner">
@@ -67,46 +55,46 @@
 
 
 <section class="modules-section">
-  <h2>Mòduls disponibles</h2>
+  <h2 data-i18n="modules_available">Mòduls disponibles</h2>
 
   <div class="module-icons">
     <a href="moduls/uro.html">
       <img src="../assets/img/icons/uro.png" alt="Urologia">
-      <span>Urologia</span>
+      <span data-i18n="module_uro">Urologia</span>
     </a>
 
     <a href="moduls/femtes.html">
       <img src="../assets/img/icons/femtes.png" alt="Intestinal">
-      <span>Intestinal</span>
+      <span data-i18n="module_intestinal">Intestinal</span>
     </a>
 
     <a href="moduls/kegel.html">
       <img src="../assets/img/icons/kegel.png" alt="Kegel">
-      <span>Kegel</span>
+      <span data-i18n="module_kegel">Kegel</span>
     </a>
 
     <a href="moduls/sexe.html">
       <img src="../assets/img/icons/sexe.png" alt="Sexual">
-      <span>Sexual</span>
+      <span data-i18n="module_sexual">Sexual</span>
     </a>
   </div>
 </section>
 
 <section class="hero">
-  <h1>PACient Actiu (PAC)</h1>
+  <h1 data-i18n="home_title">PACient Actiu (PAC)</h1>
 
-  <p>
+  <p data-i18n="home_intro">
     PAC és una eina <button class="term-link" data-term="prom">PROM</button> per registrar dades de salut, seguir-ne l’evolució
     i generar informes útils durant processos clínics, postoperatoris o de recuperació.
   </p>
   
-  <p>
+  <p data-i18n="home_target">
     Està pensada per a pacients que volen implicar-se de manera activa en el seu
     seguiment i compartir informació estructurada amb professionals sanitaris.
   </p>
 
-  <h2>Participar activament en la recuperació</h2>
-  <p>
+  <h2 data-i18n="home_active_title">Participar activament en la recuperació</h2>
+  <p data-i18n="home_active_text">
     El registre continu ajuda a prendre consciència de l’evolució pròpia,
     detectar canvis i entendre millor el procés de recuperació.
     <strong>PAC vol facilitar que el pacient sigui part activa del seu seguiment.</strong>
@@ -114,53 +102,45 @@
 </section>
 
 <section class="screenshots">
-  <h2>De les dades a l’informe</h2>
-  <p class="screenshots-intro">
+  <h2 data-i18n="story_title">De les dades a l’informe</h2>
+  <p class="screenshots-intro" data-i18n="story_intro">
     PAC acompanya el pacient en tot el procés: registre diari, visualització de l’evolució i generació d’informes.
   </p>
 
-  <p class="screenshots-intro">
+ <p class="screenshots-intro" data-i18n="story_prom">
     PAC utilitza qüestionaris PROM per transformar dades en informació útil per al seguiment clínic.
   </p>
 
   <div class="story-grid">
     <article class="story-card">
       <img src="../assets/img/screens/reg_uro.png" alt="Registre de dades">
-      <h3>1. Registra</h3>
-      <p>Introdueix dades diàries de forma senzilla i estructurada.</p>
+      <h3 data-i18n="story_register_title">1. Registra</h3>
+      <p data-i18n="story_register_text">Introdueix dades diàries de forma senzilla i estructurada.</p>
     </article>
 
     <article class="story-card">
       <img src="../assets/img/screens/graf_uro.png" alt="Gràfics d’evolució">
-      <h3>2. Visualitza</h3>
-      <p>Consulta gràfics i tendències per entendre l’evolució.</p>
+      <h3 data-i18n="story_view_title">2. Visualitza</h3>
+      <p data-i18n="story_view_text">Consulta gràfics i tendències per entendre l’evolució.</p>
     </article>
 
     <article class="story-card">
       <img src="../assets/img/screens/info_uro.png" alt="Informes">
-      <h3>3. Informa</h3>
-      <p>Genera informes útils per compartir amb professionals sanitaris.</p>
+      <h3 data-i18n="story_report_title">3. Informa</h3>
+      <p data-i18n="story_report_text">Genera informes útils per compartir amb professionals sanitaris.</p>
     </article>
   </div>
 </section>
 
-<footer class="site-footer">
+<footer class="site-footer"> 
   <div>© PACient Actiu (PAC)</div>
 
-  <nav>
-    <a href="index.html">Inici</a>
-    <span>·</span>
-    <a href="privacitat.html">Política de privacitat</a>
-    <span>·</span>
-    <a href="disclaimer.html">Avís mèdic</a>
-  </nav>
-
-  <div class="contact">
+   <div class="contact" data-i18n="footer_contact">
     Contacte:
     <a href="mailto:pacientactiu.app@gmail.com">pacientactiu.app@gmail.com</a>
   </div>
 
-  <div class="contact-note">
+  <div class="contact-note" data-i18n="footer_contact_note">
     Pots enviar suggeriments, informar de problemes o fer consultes.
   </div>
 </footer>
@@ -172,7 +152,42 @@
     <p id="term-text"></p>
   </div>
 </div>  
-<script src="../assets/js/terms.js"></script>
+<script src="../assets/js/i18n.js"></script>
 
+<script src="../assets/js/terms.js"></script>
+<script>
+  const btn = document.querySelector('.lang-btn');
+  const menu = document.querySelector('.lang-dropdown');
+  const langLabel = document.querySelector('.lang-btn span');
+
+  btn.onclick = (e) => {
+    e.stopPropagation();
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  };
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.lang-menu')) {
+      menu.style.display = 'none';
+    }
+  });
+
+  const lang = localStorage.getItem("lang") || "ca";
+  applyTranslations(lang).then(() => initTermLinks());
+  if (langLabel) langLabel.textContent = lang.toUpperCase();
+
+  document.querySelectorAll(".lang-dropdown a").forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const newLang = link.getAttribute("data-lang");
+      localStorage.setItem("lang", newLang);
+
+      applyTranslations(newLang).then(() => initTermLinks());
+      if (langLabel) langLabel.textContent = newLang.toUpperCase();
+
+      menu.style.display = 'none';
+    });
+  });
+</script>
 </body>
 </html>

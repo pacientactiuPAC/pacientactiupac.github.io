@@ -330,6 +330,8 @@ a:hover {
   color: #1565C0;
   font-weight: 600;
   text-decoration: none;
+  display: inline-block;
+  margin-bottom: 4px;
 }
 
 .refs a:hover {
@@ -896,4 +898,81 @@ main p {
   background: transparent;
   font-size: 26px;
   cursor: pointer;
+}
+
+.hero,
+.value-card,
+.screenshots,
+.workflow,
+.modules,
+.module-content,
+.module-hero {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.story-card,
+.card,
+.step,
+.module-card {
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .hero,
+  .value-card,
+  .screenshots,
+  .workflow,
+  .modules,
+  .module-content,
+  .module-hero {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
+.module-switcher {
+  margin-top: 0;
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+
+.module-switcher .module-icons img {
+  width: 42px;
+  height: 42px;
+}
+
+.module-switcher .module-icons span {
+  font-size: 12px;
+}
+.module-switcher .module-icons a.active img {
+  transform: scale(1.25);
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,0.35));
+}
+
+.module-switcher .module-icons a.active span {
+  color: #1565C0;
+  font-weight: 700;
+}
+
+.module-switcher .module-icons a.active::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #1565C0;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+.module-switcher .module-icons a:hover img {
+  transform: scale(1.08);
+}
+
+.module-switcher {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #e3e8f0;
 }

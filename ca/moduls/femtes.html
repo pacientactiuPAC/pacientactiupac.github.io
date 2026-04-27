@@ -23,7 +23,7 @@
       <a href="../index.html">Inici</a>
       <a href="../index.html#moduls">Mòduls</a>
       <a href="../privacitat.html">Privacitat</a>
-      <a href="../disclaimer.html">Avís mèdic</a>
+      <a href="../disclaimer.html">Avís legal</a>
     </nav>
 
      <div class="lang-menu">
@@ -35,10 +35,10 @@
       </button>
 
       <div class="lang-dropdown">
-        <a href="index.html">Català</a>
-        <a href="../es/index.html">Español</a>
-        <a href="../en/index.html">English</a>
-        <a href="../eu/index.html">Euskara</a>
+        <a href="#" data-lang="ca">Català</a>
+        <a href="#" data-lang="es">Español</a>
+        <a href="#" data-lang="en">English</a>
+        <a href="#" data-lang="eu">Euskara</a>
       </div>
     </div>
 
@@ -46,11 +46,36 @@
 </header>
 
 <main class="container">
+
+  <section class="modules-section module-switcher">
+    <div class="module-icons">
+      <a href="uro.html">
+        <img src="../../assets/img/icons/uro.png" alt="Urologia">
+        <span>Urologia</span>
+      </a>
+
+      <a href="femtes.html"class="active">
+        <img src="../../assets/img/icons/femtes.png" alt="Intestinal">
+        <span>Intestinal</span>
+      </a>
+
+      <a href="kegel.html">
+        <img src="../../assets/img/icons/kegel.png" alt="Kegel">
+        <span>Kegel</span>
+      </a>
+
+      <a href="sexe.html">
+        <img src="../../assets/img/icons/sexe.png" alt="Sexual">
+        <span>Sexual</span>
+      </a>
+    </div>
+  </section>
+
   <section class="module-hero">
     <img src="../../assets/img/icons/femtes.png" alt="Diari intestinal">
     <div>
-      <h1>Diari intestinal</h1>
-      <p>
+      <h1 data-i18n="femtes_title">Diari intestinal</h1>
+      <p data-i18n="femtes_subtitle">
         Seguiment de deposicions, tipus Bristol i evolució intestinal.
       </p>
     </div>
@@ -58,104 +83,85 @@
 
  <section class="module-content">
 
-  <h2>Què permet registrar</h2>
-  <p>
+  <h2 data-i18n="module_register_title">Què permet registrar</h2>
+  <p data-i18n="femtes_register_text">
     El mòdul de diari intestinal permet registrar de forma senzilla les deposicions,
     el tipus segons l’<button class="term-link" data-term="bristol">escala de Bristol</button> i les observacions relacionades amb el ritme intestinal.
   </p>
 
   <ul>
-    <li>Data i hora de cada registre.</li>
-    <li>Tipus de deposició segons l’escala de Bristol.</li>
-    <li>Observacions o incidències associades.</li>
-    <li>Evolució del patró intestinal per períodes.</li>
+    <li data-i18n="femtes_register_item_1"></li>
+    <li data-i18n="femtes_register_item_2"></li>
+    <li data-i18n="femtes_register_item_3"></li>
+    <li data-i18n="femtes_register_item_4"></li>
   </ul>
 
-  <h2>Què aporta al seguiment</h2>
-  <p>
+  <h2 data-i18n="module_followup_title">Què aporta al seguiment</h2>
+  <p data-i18n="femtes_followup_text_1">
     El registre continu ajuda a identificar canvis en la freqüència, consistència
     i regularitat intestinal, facilitant una visió més objectiva de l’evolució.
   </p>
 
-  <p>
+  <p data-i18n="femtes_followup_text_2">
     Aquesta informació pot ser útil per comentar hàbits intestinals, canvis de dieta,
     medicació o símptomes amb professionals sanitaris.
   </p>
 
-  <h2>Base clínica</h2>
-  <p>
+  <h2 data-i18n="module_clinical_title">Base clínica</h2>
+  <p data-i18n="femtes_clinical_text_1">
     El mòdul pren com a referència l’escala de Bristol, una eina utilitzada per
     classificar les femtes en set tipus segons la seva forma i consistència.
     Aquesta escala facilita descriure el patró intestinal amb un llenguatge comú
     entre pacient i professional sanitari.
   </p>
 
-  <p>
+  <p data-i18n="femtes_clinical_text_2">
     Diverses guies i materials clínics utilitzen l’escala de Bristol per valorar
     la consistència de les deposicions i fer seguiment de problemes com restrenyiment
     o diarrea.
   </p>
 
-  <h2>Informes i gràfics</h2>
-  <p>
+  <h2 data-i18n="module_reports_title">Informes i gràfics</h2>
+  <p data-i18n="femtes_reports_text">
     Les dades registrades es poden consultar amb gràfics i informes resum,
     facilitant la revisió de l’evolució intestinal durant el període seleccionat.
   </p>
 
-  <h2>Referències</h2>
-  <ul class="refs">
+  <h2 data-i18n="module_refs_title">Referències</h2>
+    <ul class="refs">
     <li>
-      <a href="https://theromefoundation.org/resources/bristol-stool-form-scale/" target="_blank" rel="noopener">
+      <a href="https://theromefoundation.org/" target="_blank">
         Rome Foundation · Bristol Stool Form Scale
       </a>
     </li>
     <li>
-      <a href="https://www.nice.org.uk/guidance/cg99/chapter/Appendix-B-Bristol-Stool-Form-Scale" target="_blank" rel="noopener">
-        NICE · Bristol Stool Form Scale
+      <a href="https://www.nice.org.uk/" target="_blank">
+        NICE Guidelines
       </a>
     </li>
     <li>
-      <a href="https://www.england.nhs.uk/wp-content/uploads/2023/07/Bristol-stool-chart-for-carer-web-version.pdf" target="_blank" rel="noopener">
-        NHS England · Bristol stool chart
-      </a>
-    </li>
-    <li>
-      <a href="https://www.continence.org.au/about-incontinence/bowel-incontinence/bristol-stool-chart/" target="_blank" rel="noopener">
-        Continence Foundation of Australia · Bristol stool chart
+      <a href="https://www.aegastro.es/" target="_blank">
+        Asociación Española de Gastroenterología
       </a>
     </li>
   </ul>
 
-  <p class="disclaimer-small">
+  <p class="disclaimer-small" data-i18n="module_disclaimer">
     Aquesta aplicació no substitueix el criteri mèdic professional.
   </p>
 
 </section>
 </main>
 
-<p class="disclaimer-small">
-  Aquesta aplicació no substitueix el criteri mèdic professional.
-</p>
-
 <footer class="site-footer">
   <div>© PACient Actiu (PAC)</div>
 
-  <nav>
-    <a href="../index.html">Inici</a>
-    <span>·</span>
-    <a href="../privacitat.html">Política de privacitat</a>
-    <span>·</span>
-    <a href="../disclaimer.html">Avís mèdic</a>
-  </nav>
-
-  <div class="contact">
-    Contacte: 
-    <a href="mailto:pacientactiu.app@gmail.com">
-      pacientactiu.app@gmail.com
-    </a>
+   <div class="contact" data-i18n="footer_contact">
+    Contacte:
+    <a href="mailto:pacientactiu.app@gmail.com">pacientactiu.app@gmail.com</a>
   </div>
 
-  <div class="contact-note">
+  <div class="contact-note" data-i18n="footer_contact_note">
     Pots enviar suggeriments, informar de problemes o fer consultes.
   </div>
 </footer>
@@ -167,7 +173,41 @@
     <p id="term-text"></p>
   </div>
 </div>  
-<script src="../../assets/js/terms.js"></script>
+<script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/terms.js"></script>
+<script>
+  const btn = document.querySelector('.lang-btn');
+  const menu = document.querySelector('.lang-dropdown');
+  const langLabel = document.querySelector('.lang-btn span');
 
+  btn.onclick = (e) => {
+    e.stopPropagation();
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  };
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.lang-menu')) {
+      menu.style.display = 'none';
+    }
+  });
+
+  const lang = localStorage.getItem("lang") || "ca";
+  applyTranslations(lang).then(() => initTermLinks());
+  if (langLabel) langLabel.textContent = lang.toUpperCase();
+
+  document.querySelectorAll(".lang-dropdown a").forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const newLang = link.getAttribute("data-lang");
+      localStorage.setItem("lang", newLang);
+
+      applyTranslations(newLang).then(() => initTermLinks());
+      if (langLabel) langLabel.textContent = newLang.toUpperCase();
+
+      menu.style.display = 'none';
+    });
+  });
+</script>
 </body>
 </html>
