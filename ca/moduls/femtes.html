@@ -56,30 +56,81 @@
     </div>
   </section>
 
-  <section>
-    <h2>Què permet registrar</h2>
-    <ul>
-      <li>Data i hora del registre</li>
-      <li>Tipus de deposició segons Bristol</li>
-      <li>Observacions associades</li>
-      <li>Evolució per períodes</li>
-    </ul>
-  </section>
+ <section class="module-content">
 
-  <section>
-    <h2>Què aporta</h2>
-    <p>
-      Ajuda a ordenar la informació intestinal i a detectar canvis en el patró,
-      facilitant el seguiment personal o amb professionals sanitaris.
-    </p>
-  </section>
+  <h2>Què permet registrar</h2>
+  <p>
+    El mòdul de diari intestinal permet registrar de forma senzilla les deposicions,
+    el tipus segons l’<button class="term-link" data-term="bristol">escala de Bristol</button> i les observacions relacionades amb el ritme intestinal.
+  </p>
 
-  <section>
-    <h2>Informes i gràfics</h2>
-    <p>
-      Permet visualitzar l’evolució amb gràfics i generar informes resum del període seleccionat.
-    </p>
-  </section>
+  <ul>
+    <li>Data i hora de cada registre.</li>
+    <li>Tipus de deposició segons l’escala de Bristol.</li>
+    <li>Observacions o incidències associades.</li>
+    <li>Evolució del patró intestinal per períodes.</li>
+  </ul>
+
+  <h2>Què aporta al seguiment</h2>
+  <p>
+    El registre continu ajuda a identificar canvis en la freqüència, consistència
+    i regularitat intestinal, facilitant una visió més objectiva de l’evolució.
+  </p>
+
+  <p>
+    Aquesta informació pot ser útil per comentar hàbits intestinals, canvis de dieta,
+    medicació o símptomes amb professionals sanitaris.
+  </p>
+
+  <h2>Base clínica</h2>
+  <p>
+    El mòdul pren com a referència l’escala de Bristol, una eina utilitzada per
+    classificar les femtes en set tipus segons la seva forma i consistència.
+    Aquesta escala facilita descriure el patró intestinal amb un llenguatge comú
+    entre pacient i professional sanitari.
+  </p>
+
+  <p>
+    Diverses guies i materials clínics utilitzen l’escala de Bristol per valorar
+    la consistència de les deposicions i fer seguiment de problemes com restrenyiment
+    o diarrea.
+  </p>
+
+  <h2>Informes i gràfics</h2>
+  <p>
+    Les dades registrades es poden consultar amb gràfics i informes resum,
+    facilitant la revisió de l’evolució intestinal durant el període seleccionat.
+  </p>
+
+  <h2>Referències</h2>
+  <ul class="refs">
+    <li>
+      <a href="https://theromefoundation.org/resources/bristol-stool-form-scale/" target="_blank" rel="noopener">
+        Rome Foundation · Bristol Stool Form Scale
+      </a>
+    </li>
+    <li>
+      <a href="https://www.nice.org.uk/guidance/cg99/chapter/Appendix-B-Bristol-Stool-Form-Scale" target="_blank" rel="noopener">
+        NICE · Bristol Stool Form Scale
+      </a>
+    </li>
+    <li>
+      <a href="https://www.england.nhs.uk/wp-content/uploads/2023/07/Bristol-stool-chart-for-carer-web-version.pdf" target="_blank" rel="noopener">
+        NHS England · Bristol stool chart
+      </a>
+    </li>
+    <li>
+      <a href="https://www.continence.org.au/about-incontinence/bowel-incontinence/bristol-stool-chart/" target="_blank" rel="noopener">
+        Continence Foundation of Australia · Bristol stool chart
+      </a>
+    </li>
+  </ul>
+
+  <p class="disclaimer-small">
+    Aquesta aplicació no substitueix el criteri mèdic professional.
+  </p>
+
+</section>
 </main>
 
 <p class="disclaimer-small">
@@ -108,6 +159,15 @@
     Pots enviar suggeriments, informar de problemes o fer consultes.
   </div>
 </footer>
+
+<div id="term-modal" class="term-modal" hidden>
+  <div class="term-modal-box">
+    <button class="term-close" aria-label="Tancar">×</button>
+    <h3 id="term-title"></h3>
+    <p id="term-text"></p>
+  </div>
+</div>  
+<script src="../../assets/js/terms.js"></script>
 
 </body>
 </html>

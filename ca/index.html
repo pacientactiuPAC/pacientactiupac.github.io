@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 
 <header class="site-header">
@@ -95,10 +96,10 @@
   <h1>PACient Actiu (PAC)</h1>
 
   <p>
-    PAC és una eina PROM per registrar dades de salut, seguir-ne l’evolució
+    PAC és una eina <button class="term-link" data-term="prom">PROM</button> per registrar dades de salut, seguir-ne l’evolució
     i generar informes útils durant processos clínics, postoperatoris o de recuperació.
   </p>
-
+  
   <p>
     Està pensada per a pacients que volen implicar-se de manera activa en el seu
     seguiment i compartir informació estructurada amb professionals sanitaris.
@@ -163,6 +164,15 @@
     Pots enviar suggeriments, informar de problemes o fer consultes.
   </div>
 </footer>
+
+<div id="term-modal" class="term-modal" hidden>
+  <div class="term-modal-box">
+    <button class="term-close" aria-label="Tancar">×</button>
+    <h3 id="term-title"></h3>
+    <p id="term-text"></p>
+  </div>
+</div>  
+<script src="../assets/js/terms.js"></script>
 
 </body>
 </html>

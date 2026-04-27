@@ -846,3 +846,54 @@ main p {
   }
     
 }
+
+.term-link {
+  border: none;
+  background: transparent;
+  color: #1565C0;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+}
+
+.term-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+  padding: 20px;
+}
+
+.term-modal[hidden] {
+  display: none;
+}
+
+.term-modal-box {
+  background: white;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+.term-modal-box h3 {
+  margin-top: 0;
+  color: #1565C0;
+}
+
+.term-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  font-size: 26px;
+  cursor: pointer;
+}

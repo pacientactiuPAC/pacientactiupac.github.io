@@ -57,58 +57,78 @@
     </div>
   </section>
 
-  <section class="module-content">
+ <section class="module-content">
 
-    <h2>Què avalua aquest mòdul</h2>
+    <h2>Què permet registrar</h2>
     <p>
-      Aquest mòdul permet fer un seguiment de la funció sexual durant processos
-      de recuperació, especialment en contextos urològics o postquirúrgics.
+      El mòdul de <button class="term-link" data-term="diari-miccional">diari miccional</button> permet registrar de forma estructurada les dades
+      relacionades amb la ingesta de líquids, les miccions, les pèrdues i altres
+      incidències urinàries.
+    </p>
+
+    <ul>
+      <li>Ingesta de líquids.</li>
+      <li>Miccions i volum eliminat.</li>
+      <li>Pèrdues urinàries i ús de proteccions.</li>
+      <li>Escapes, urgència o incidències rellevants.</li>
+      <li>Diferenciació entre períodes de dia, nit o repòs segons el registre.</li>
+    </ul>
+
+    <h2>Què aporta al seguiment</h2>
+    <p>
+      El registre continu facilita observar patrons de freqüència, volum,
+      noctúria, pèrdues i relació entre ingesta i eliminació. Aquesta informació
+      pot ajudar a comprendre millor l’evolució del control urinari.
     </p>
 
     <p>
-      El registre continu facilita detectar canvis, valorar l’evolució i
-      disposar d’informació estructurada per al seguiment clínic.
+      El mòdul està pensat per ajudar el pacient a participar activament en el seu
+      seguiment i per disposar d’informació ordenada quan sigui necessari comentar
+      l’evolució amb professionals sanitaris.
     </p>
 
     <h2>Base clínica</h2>
-
     <p>
-      El disseny del mòdul es basa en qüestionaris validats utilitzats en la
-      pràctica clínica:
+      El mòdul s’inspira en el concepte de diari miccional, diari vesical o
+      taula de freqüència-volum. Aquests registres s’utilitzen habitualment per
+      documentar ingesta, miccions, volums, episodis d’urgència, pèrdues i ús de
+      proteccions.
     </p>
 
-    <ul class="clinical-list">
-      <li>
-        <strong>IIEF-5</strong> (International Index of Erectile Function):
-        qüestionari utilitzat per avaluar la funció erèctil en homes.
-      </li>
-      <li>
-        <strong>FSFI</strong> (Female Sexual Function Index):
-        eina per avaluar diferents dimensions de la funció sexual en dones.
-      </li>
-    </ul>
-
     <p>
-      PAC adapta aquests conceptes per facilitar-ne l’ús en el seguiment diari,
-      mantenint un enfocament orientat al pacient (PROM).
+      Les guies clíniques consideren els diaris miccionals una eina útil perquè
+      proporcionen informació objectiva en temps real i redueixen el biaix del
+      record del pacient. En alguns contextos, com els símptomes del tracte urinari
+      inferior o la noctúria, es recomana completar el diari durant diversos dies.
+    </p>
+
+    <h2>Informes i gràfics</h2>
+    <p>
+      Les dades registrades es poden consultar mitjançant gràfics i informes PDF,
+      amb resums per període i valors agregats que faciliten la revisió de
+      l’evolució.
     </p>
 
     <h2>Referències</h2>
-
     <ul class="refs">
       <li>
-        <a href="https://www.auanet.org/" target="_blank">
-          American Urological Association
+        <a href="https://www.ics.org/committees/standardisation/terminologydiscussions/bladderdiary" target="_blank" rel="noopener">
+          International Continence Society · Bladder diary / frequency volume chart
         </a>
       </li>
       <li>
-        <a href="https://uroweb.org/" target="_blank">
-          European Association of Urology
+        <a href="https://uroweb.org/guidelines/management-of-non-neurogenic-male-luts/chapter/diagnostic-evaluation" target="_blank" rel="noopener">
+          European Association of Urology · Male LUTS diagnostic evaluation
         </a>
       </li>
       <li>
-        <a href="https://www.who.int/" target="_blank">
-          World Health Organization
+        <a href="https://www.auanet.org/guidelines-and-quality/guidelines/idiopathic-overactive-bladder" target="_blank" rel="noopener">
+          American Urological Association · Overactive bladder guideline
+        </a>
+      </li>
+      <li>
+        <a href="https://www.urologyhealth.org/educational-resources/bladder-diary" target="_blank" rel="noopener">
+          Urology Care Foundation · Bladder diary
         </a>
       </li>
     </ul>
@@ -116,36 +136,8 @@
     <p class="disclaimer-small">
       Aquesta aplicació no substitueix el criteri mèdic professional.
     </p>
-    
-  </section>
 
-  <section>
-    <h2>Què permet registrar</h2>
-    <ul>
-      <li>Ingesta de líquids</li>
-      <li>Miccions</li>
-      <li>Pèrdues urinàries</li>
-      <li>Escapes o incidències</li>
-      <li>Observacions associades als registres</li>
-    </ul>
   </section>
-
-  <section>
-    <h2>Què aporta</h2>
-    <p>
-      Permet veure l’evolució del patró miccional, detectar canvis i generar
-      informes que poden ajudar en el seguiment amb professionals sanitaris.
-    </p>
-  </section>
-
-  <section>
-    <h2>Informes i gràfics</h2>
-    <p>
-      El mòdul genera taules, gràfics i informes PDF amb la informació registrada
-      durant el període seleccionat.
-    </p>
-  </section>
-
   
 
 </main>
@@ -174,6 +166,15 @@
     Pots enviar suggeriments, informar de problemes o fer consultes.
   </div>
 </footer>
+
+<div id="term-modal" class="term-modal" hidden>
+  <div class="term-modal-box">
+    <button class="term-close" aria-label="Tancar">×</button>
+    <h3 id="term-title"></h3>
+    <p id="term-text"></p>
+  </div>
+</div>  
+<script src="../../assets/js/terms.js"></script>
 
 </body>
 </html>
