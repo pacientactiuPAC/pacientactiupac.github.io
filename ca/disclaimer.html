@@ -8,91 +8,48 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
+<div id="site-header"></div>
 
-    <a class="brand" href="index.html">
-      <img src="../assets/img/icons/pac.png" alt="PAC">
-      <span class="brand-text-wrap">
-        <span class="brand-text">PacientACtiu</span>
-        <span class="brand-subtitle">Avís legal</span>
-      </span>
-    </a>
 
-    <nav class="main-nav">
-      <a href="index.html">Inici</a>
-      <a href="index.html#moduls">Mòduls</a>
-      <a href="privacitat.html">Privacitat</a>
-      <a href="disclaimer.html">Avís legal</a>
-    </nav>
+<main class="container">
 
-     <div class="lang-menu">
-      <button class="lang-btn" aria-label="Canviar idioma">
-        <svg class="lang-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm0 2c1.1 1.3 1.8 3 2.1 5H9.9c.3-2 1-3.7 2.1-5Zm-4.1.9A12.5 12.5 0 0 0 6.9 9H4.3a8 8 0 0 1 3.6-4.1ZM4 12c0-.3 0-.7.1-1h2.6a14.8 14.8 0 0 0 0 2H4.1A8.2 8.2 0 0 1 4 12Zm.3 3h2.6c.2 1.5.5 2.9 1 4.1A8 8 0 0 1 4.3 15Zm7.7 5c-1.1-1.3-1.8-3-2.1-5h4.2c-.3 2-1 3.7-2.1 5Zm2.4-7H9.6a12.7 12.7 0 0 1 0-2h4.8a12.7 12.7 0 0 1 0 2Zm1.7 6.1c.5-1.2.8-2.6 1-4.1h2.6a8 8 0 0 1-3.6 4.1ZM17.3 13a14.8 14.8 0 0 0 0-2h2.6a8.2 8.2 0 0 1 0 2h-2.6Zm-.2-4c-.2-1.5-.5-2.9-1-4.1A8 8 0 0 1 19.7 9h-2.6Z"/>
-        </svg>
-        <span>CA</span>
-      </button>
+<h2 data-i18n="disclaimer_title">Avís legal i mèdic</h2>
 
-      <div class="lang-dropdown">
-        <a href="#" data-lang="ca">Català</a>
-        <a href="#" data-lang="es">Español</a>
-        <a href="#" data-lang="en">English</a>
-        <a href="#" data-lang="eu">Euskara</a>
-      </div>
-    </div>
-
-  </div>
-</header>
-
-<main class="container">  
-<h2>Avís legal</h2>
-
-<p>
+<p data-i18n="disclaimer_intro">
 PACient Actiu (PAC) és una eina de suport per al registre, seguiment i visualització
 de dades relacionades amb processos de salut, recuperació o control clínic.
 </p>
 
-<h3>No substitueix el professional sanitari</h3>
-<p>
+<h3 data-i18n="disclaimer_not_medical_title">No substitueix el professional sanitari</h3>
+<p data-i18n="disclaimer_not_medical_text">
 La informació registrada o mostrada per l’aplicació no constitueix diagnòstic,
 tractament ni recomanació mèdica. L’aplicació no substitueix en cap cas la valoració,
 seguiment o criteri d’un professional sanitari qualificat.
 </p>
 
-<h3>Ús dels informes</h3>
-<p>
-Els informes generats per l’aplicació tenen una finalitat informativa i de suport
-al seguiment. La seva interpretació clínica correspon sempre al professional sanitari.
+<h3 data-i18n="disclaimer_reports_title">Ús dels informes</h3>
+<p data-i18n="disclaimer_reports_text">
+Els informes, gràfics i resums generats per l’aplicació tenen una finalitat
+informativa i de suport al seguiment. La seva interpretació clínica correspon
+sempre al professional sanitari.
 </p>
 
-<h3>Situacions urgents</h3>
-<p>
-En cas de dolor intens, febre, sagnat, empitjorament sobtat, dificultat important
-per orinar, retenció urinària o qualsevol situació que pugui requerir atenció
-urgent, cal contactar amb els serveis sanitaris corresponents.
+<h3 data-i18n="disclaimer_decisions_title">Decisions sobre la salut</h3>
+<p data-i18n="disclaimer_decisions_text">
+Qualsevol decisió relacionada amb la salut, el tractament o el seguiment clínic
+s’ha de prendre sempre amb l’assessorament d’un professional sanitari.
 </p>
 
-<h3>Responsabilitat de l’usuari</h3>
-<p>
-L’usuari és responsable de la veracitat de les dades introduïdes i de l’ús que faci
-de la informació generada per l’aplicació.
+<h3 data-i18n="disclaimer_user_responsibility_title">Responsabilitat de l’usuari</h3>
+<p data-i18n="disclaimer_user_responsibility_text">
+L’usuari és responsable de la veracitat de les dades introduïdes, de la conservació
+de les seves còpies exportades i de l’ús que faci de la informació generada per
+l’aplicació.
 </p>
 
 </main>
 
-<footer class="site-footer">
-  <div>© PACient Actiu (PAC)</div>
-
-   <div class="contact" data-i18n="footer_contact">
-    Contacte:
-    <a href="mailto:pacientactiu.app@gmail.com">pacientactiu.app@gmail.com</a>
-  </div>
-
-  <div class="contact-note" data-i18n="footer_contact_note">
-    Pots enviar suggeriments, informar de problemes o fer consultes.
-  </div>
-</footer>
+<div id="site-footer"></div>
 
 <div id="term-modal" class="term-modal" hidden>
   <div class="term-modal-box">
@@ -103,39 +60,13 @@ de la informació generada per l’aplicació.
 </div>  
 <script src="/assets/js/i18n.js"></script>
 <script src="/assets/js/terms.js"></script>
+<script src="/assets/js/layout.js"></script>
 <script>
-  const btn = document.querySelector('.lang-btn');
-  const menu = document.querySelector('.lang-dropdown');
-  const langLabel = document.querySelector('.lang-btn span');
-
-  btn.onclick = (e) => {
-    e.stopPropagation();
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-  };
-
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.lang-menu')) {
-      menu.style.display = 'none';
-    }
+  renderLayout({
+    active: "legal",
+    basePath: ".",
+    subtitleKey: "disclaimer_title"
   });
-
-  const lang = localStorage.getItem("lang") || "ca";
-  applyTranslations(lang).then(() => initTermLinks());
-  if (langLabel) langLabel.textContent = lang.toUpperCase();
-
-  document.querySelectorAll(".lang-dropdown a").forEach(link => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-
-      const newLang = link.getAttribute("data-lang");
-      localStorage.setItem("lang", newLang);
-
-      applyTranslations(newLang).then(() => initTermLinks());
-      if (langLabel) langLabel.textContent = newLang.toUpperCase();
-
-      menu.style.display = 'none';
-    });
-  });
-</script>  
+</script>
 </body>
 </html>

@@ -8,42 +8,8 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
+<div id="site-header"></div>
 
-    <a class="brand" href="index.html">
-      <img src="../../assets/img/icons/pac.png" alt="PAC">
-      <span class="brand-text-wrap">
-        <span class="brand-text">PacientACtiu</span>
-        <span class="brand-subtitle">Diari miccional</span>
-      </span>
-    </a>
-
-    <nav class="main-nav">
-      <a href="../index.html">Inici</a>
-      <a href="../index.html#moduls">Mòduls</a>
-      <a href="../privacitat.html">Privacitat</a>
-      <a href="../disclaimer.html">Avís legal</a>
-    </nav>
-
-     <div class="lang-menu">
-      <button class="lang-btn" aria-label="Canviar idioma">
-        <svg class="lang-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm0 2c1.1 1.3 1.8 3 2.1 5H9.9c.3-2 1-3.7 2.1-5Zm-4.1.9A12.5 12.5 0 0 0 6.9 9H4.3a8 8 0 0 1 3.6-4.1ZM4 12c0-.3 0-.7.1-1h2.6a14.8 14.8 0 0 0 0 2H4.1A8.2 8.2 0 0 1 4 12Zm.3 3h2.6c.2 1.5.5 2.9 1 4.1A8 8 0 0 1 4.3 15Zm7.7 5c-1.1-1.3-1.8-3-2.1-5h4.2c-.3 2-1 3.7-2.1 5Zm2.4-7H9.6a12.7 12.7 0 0 1 0-2h4.8a12.7 12.7 0 0 1 0 2Zm1.7 6.1c.5-1.2.8-2.6 1-4.1h2.6a8 8 0 0 1-3.6 4.1ZM17.3 13a14.8 14.8 0 0 0 0-2h2.6a8.2 8.2 0 0 1 0 2h-2.6Zm-.2-4c-.2-1.5-.5-2.9-1-4.1A8 8 0 0 1 19.7 9h-2.6Z"/>
-        </svg>
-        <span>CA</span>
-      </button>
-
-      <div class="lang-dropdown">
-        <a href="#" data-lang="ca">Català</a>
-        <a href="#" data-lang="es">Español</a>
-        <a href="#" data-lang="en">English</a>
-        <a href="#" data-lang="eu">Euskara</a>
-      </div>
-    </div>
-
-  </div>
-</header>
 
 <main class="container">
 
@@ -166,20 +132,7 @@
 
 </main>
 
-
-
-<footer class="site-footer">
-  <div>© PACient Actiu (PAC)</div>
-
-   <div class="contact" data-i18n="footer_contact">
-    Contacte:
-    <a href="mailto:pacientactiu.app@gmail.com">pacientactiu.app@gmail.com</a>
-  </div>
-
-  <div class="contact-note" data-i18n="footer_contact_note">
-    Pots enviar suggeriments, informar de problemes o fer consultes.
-  </div>
-</footer>
+<div id="site-footer"></div>
 
 <div id="term-modal" class="term-modal" hidden>
   <div class="term-modal-box">
@@ -190,40 +143,13 @@
 </div>  
 <script src="/assets/js/i18n.js"></script>
 <script src="/assets/js/terms.js"></script>
+<script src="/assets/js/layout.js"></script>
 <script>
-  const btn = document.querySelector('.lang-btn');
-  const menu = document.querySelector('.lang-dropdown');
-  const langLabel = document.querySelector('.lang-btn span');
-
-  btn.onclick = (e) => {
-    e.stopPropagation();
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-  };
-
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.lang-menu')) {
-      menu.style.display = 'none';
-    }
-  });
-
-  const lang = localStorage.getItem("lang") || "ca";
-  applyTranslations(lang).then(() => initTermLinks());
-  if (langLabel) langLabel.textContent = lang.toUpperCase();
-
-  document.querySelectorAll(".lang-dropdown a").forEach(link => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-
-      const newLang = link.getAttribute("data-lang");
-      localStorage.setItem("lang", newLang);
-
-      applyTranslations(newLang).then(() => initTermLinks());
-      if (langLabel) langLabel.textContent = newLang.toUpperCase();
-
-      menu.style.display = 'none';
-    });
+  renderLayout({
+    active: "uro",
+    basePath: "..",
+    subtitleKey: "menu_modules"
   });
 </script>
-
 </body>
 </html>

@@ -28,3 +28,47 @@ async function applyTranslations(lang) {
 function t(key) {
   return currentTranslations[key] || key;
 }
+
+function initLanguageMenu() {
+  const btn = document.querySelector(".lang-btn");
+  const menu = document.querySelector(".lang-dropdown");
+
+  if (!btn || !menu) return;
+
+  btn.onclick = (e) => {
+    e.stopPropagation();
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  };
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".lang-menu")) {
+      menu.style.display = "none";
+    }
+  });
+
+  document.querySelectorAll(".lang-dropdown a").forEach(link => {
+    link.addEventListener("click", async (e) => {
+      e.preventDefault();
+
+      const newLang = link.getAttribute("data-lang");
+      if (!newLang) return;
+
+      await setLanguage(newLang);
+
+      menu.style.display = "none";
+    });
+  });
+}
+
+async function setLanguage(lang) {
+  localStorage.setItem("lang", lang);
+
+  await applyTranslations(lang);
+
+  const langLabel = document.querySelector(".lang-btn span");
+  if (langLabel) langLabel.textContent = lang.toUpperCase();
+
+  if (typeof initTermLinks === "function") {
+    initTermLinks();
+  }
+}
