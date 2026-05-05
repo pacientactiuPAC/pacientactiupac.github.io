@@ -6,8 +6,8 @@ function renderHeader({ active = "home", basePath = ".", subtitleKey = null } = 
     <header class="site-header">
       <div class="header-inner">
 
-        <a class="brand" href="${basePath}/index.html">
-          <img src="${basePath}/../assets/img/icons/pac.png" alt="PAC">
+        <a class="brand" href="/">
+         <img src="/assets/img/icons/pac.png" alt="PAC">
           <span class="brand-text-wrap">
             <span class="brand-text">
               <span data-i18n="brand_name">PACient Actiu (PAC)</span><sup>©</sup>
