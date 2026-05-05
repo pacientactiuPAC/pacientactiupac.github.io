@@ -1,5 +1,9 @@
 {
     "brand_name": "PACient Actiu (PAC)",
+    "home_seo_text": "PACient Actiu es una aplicación para el control urológico que incluye diario miccional, seguimiento de la incontinencia urinaria y recuperación tras problemas de próstata como la hiperplasia benigna de próstata o una operación de próstata. Permite registrar la micción, visualizar la evolución y generar informes clínicos.",
+    "home_seo_title": "Seguimiento urológico y recuperación",
+"home_seo_text_1": "PACient Actiu es una aplicación para el control urológico, el diario miccional y el seguimiento de la incontinencia urinaria.",
+"home_seo_text_2": "Es útil en la recuperación tras problemas de próstata como la hiperplasia benigna de próstata o una operación de próstata. Incluye ejercicios de Kegel, diario intestinal y cuestionarios clínicos como IIEF-5 y FSFI.",
     "brand_subtitle": "Seguimiento clínico basado en PROM",
     "menu_home": "Inicio",
     "menu_modules": "Módulos",

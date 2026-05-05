@@ -2,96 +2,113 @@
 <html lang="ca">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KSJEFLT3ZZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KSJEFLT3ZZ', {
+      'anonymize_ip': true
+    });
+  </script>
+
   <meta charset="UTF-8">
-  <title>PACient Actiu</title>
+
+  <title>PACient Actiu – Seguiment urològic i diari miccional</title>
+
+  <meta name="description" content="Aplicació per al control urològic, diari miccional, incontinència urinària i recuperació després de problemes de pròstata o operació.">
+
+  <link rel="canonical" href="https://pacientactiu.com/">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+
 <div id="site-header"></div>
 
-
 <section class="banner">
-  <img src="assets/img/banner.png" alt="PAC banner">
+  <img src="assets/img/banner.png" alt="Aplicació PACient Actiu per al control urològic i diari miccional">
 </section>
 
+<section class="hero">
+
+  <!-- 🔝 H1 SEO -->
+  <h1 data-i18n="home_title">
+    PACient Actiu – Seguiment urològic i diari miccional
+  </h1>
+
+  <p data-i18n="home_intro"></p>
+
+  <!-- 🔥 SEO integrat -->
+  <p data-i18n="home_seo_text"></p>
+
+  <p data-i18n="home_target"></p>
+
+  <h2 data-i18n="home_active_title"></h2>
+  <p data-i18n="home_active_text"></p>
+
+</section>
 
 <section class="modules-section">
-  <h2 data-i18n="modules_available">Mòduls disponibles</h2>
+  <h2 data-i18n="modules_available">Mòduls de seguiment clínic</h2>
 
   <div class="module-icons">
     <a href="moduls/uro.html">
-      <img src="assets/img/icons/uro.png" alt="Urologia">
-      <span data-i18n="module_uro">Urologia</span>
+      <img src="assets/img/icons/uro.png" alt="Control urològic i diari miccional">
+      <span data-i18n="module_uro"></span>
     </a>
 
     <a href="moduls/femtes.html">
-      <img src="assets/img/icons/femtes.png" alt="Intestinal">
-      <span data-i18n="module_intestinal">Intestinal</span>
+      <img src="assets/img/icons/femtes.png" alt="Diari intestinal i seguiment de deposicions">
+      <span data-i18n="module_intestinal"></span>
     </a>
 
     <a href="moduls/kegel.html">
-      <img src="assets/img/icons/kegel.png" alt="Kegel">
-      <span data-i18n="module_kegel">Kegel</span>
+      <img src="assets/img/icons/kegel.png" alt="Exercicis de Kegel i sòl pelvià">
+      <span data-i18n="module_kegel"></span>
     </a>
 
     <a href="moduls/sexe.html">
-      <img src="assets/img/icons/sexe.png" alt="Sexual">
-      <span data-i18n="module_sexual">Sexual</span>
+      <img src="assets/img/icons/sexe.png" alt="Seguiment de la salut sexual i qüestionaris IIEF-5 i FSFI">
+      <span data-i18n="module_sexual"></span>
     </a>
   </div>
 </section>
 
-<section class="hero">
-  <h1 data-i18n="home_title">PACient Actiu (PAC)</h1>
-
-  <p data-i18n="home_intro">
-    PAC és una eina <button class="term-link" data-term="prom">PROM</button> per registrar dades de salut, seguir-ne l’evolució
-    i generar informes útils durant processos clínics, postoperatoris o de recuperació.
-  </p>
-  
-  <p data-i18n="home_target">
-    Està pensada per a pacients que volen implicar-se de manera activa en el seu
-    seguiment i compartir informació estructurada amb professionals sanitaris.
-  </p>
-
-  <h2 data-i18n="home_active_title">Participar activament en la recuperació</h2>
-  <p data-i18n="home_active_text">
-    El registre continu ajuda a prendre consciència de l’evolució pròpia,
-    detectar canvis i entendre millor el procés de recuperació.
-    <strong>PAC vol facilitar que el pacient sigui part activa del seu seguiment.</strong>
-  </p>
-</section>
-
 <section class="screenshots">
-  <h2 data-i18n="story_title">De les dades a l’informe</h2>
-  <p class="screenshots-intro" data-i18n="story_intro">
-    PAC acompanya el pacient en tot el procés: registre diari, visualització de l’evolució i generació d’informes.
-  </p>
+  <h2 data-i18n="story_title">
+    Seguiment clínic: registre, gràfics i informes
+  </h2>
 
- <p class="screenshots-intro" data-i18n="story_prom">
-    PAC utilitza qüestionaris PROM per transformar dades en informació útil per al seguiment clínic.
-  </p>
+  <p class="screenshots-intro" data-i18n="story_intro"></p>
+
+  <p class="screenshots-intro" data-i18n="story_prom"></p>
 
   <div class="story-grid">
+
     <article class="story-card">
-      <img src="assets/img/screens/reg_uro.png" alt="Registre de dades">
-      <h3 data-i18n="story_register_title">1. Registra</h3>
-      <p data-i18n="story_register_text">Introdueix dades diàries de forma senzilla i estructurada.</p>
+      <img src="assets/img/screens/reg_uro.png" alt="Registre de dades urològiques i diari miccional">
+      <h3 data-i18n="story_register_title"></h3>
+      <p data-i18n="story_register_text"></p>
     </article>
 
     <article class="story-card">
-      <img src="assets/img/screens/graf_uro.png" alt="Gràfics d’evolució">
-      <h3 data-i18n="story_view_title">2. Visualitza</h3>
-      <p data-i18n="story_view_text">Consulta gràfics i tendències per entendre l’evolució.</p>
+      <img src="assets/img/screens/graf_uro.png" alt="Gràfics de seguiment urològic i evolució clínica">
+      <h3 data-i18n="story_view_title"></h3>
+      <p data-i18n="story_view_text"></p>
     </article>
 
     <article class="story-card">
-      <img src="assets/img/screens/info_uro.png" alt="Informes">
-      <h3 data-i18n="story_report_title">3. Informa</h3>
-      <p data-i18n="story_report_text">Genera informes útils per compartir amb professionals sanitaris.</p>
+      <img src="assets/img/screens/info_uro.png" alt="Informes clínics per compartir amb professionals sanitaris">
+      <h3 data-i18n="story_report_title"></h3>
+      <p data-i18n="story_report_text"></p>
     </article>
+
   </div>
 </section>
 
@@ -104,9 +121,11 @@
     <p id="term-text"></p>
   </div>
 </div>  
+
 <script src="/assets/js/i18n.js"></script>
 <script src="/assets/js/terms.js"></script>
 <script src="/assets/js/layout.js"></script>
+
 <script>
   renderLayout({
     active: "home",
@@ -114,5 +133,6 @@
     subtitleKey: "brand_subtitle"
   });
 </script>
+
 </body>
 </html>
