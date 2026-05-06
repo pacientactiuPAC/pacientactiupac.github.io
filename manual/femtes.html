@@ -7,66 +7,80 @@
   <title>Manual Femtes - PAC Suite</title>
 
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/manual.css" />
 </head>
 
 <body>
 
+  <div id="site-header"></div>
+
   <header class="hero">
-    <h1>Femtes</h1>
-    <p>Seguiment intestinal i escala de Bristol</p>
+    <h1 data-i18n="manual.femtes.title"></h1>
+    <p data-i18n="manual.femtes.subtitle"></p>
   </header>
 
-  <main class="container">
+  <main class="manual-container">
 
-    <a class="back-link" href="index.html">
-      ← Tornar al manual
-    </a>
+    <a class="back-link" href="index.html" data-preserve-lang data-i18n="manual.back"></a>
 
     <section class="card">
-      <h2>Què permet registrar?</h2>
+      <h2 data-i18n="manual.common.register_title"></h2>
 
       <ul>
-        <li>Tipus de femta segons l’escala de Bristol.</li>
-        <li>Esforç o dificultat.</li>
-        <li>Observacions addicionals.</li>
-        <li>Freqüència diària.</li>
+        <li data-i18n="manual.femtes.reg1"></li>
+        <li data-i18n="manual.femtes.reg2"></li>
+        <li data-i18n="manual.femtes.reg3"></li>
+        <li data-i18n="manual.femtes.reg4"></li>
       </ul>
     </section>
 
     <section class="card">
-      <h2>Funcionament bàsic</h2>
+      <h2 data-i18n="manual.common.basic_title"></h2>
 
       <ol>
-        <li>Prem el botó “+”.</li>
-        <li>Selecciona el tipus Bristol.</li>
-        <li>Indica l’esforç realitzat.</li>
-        <li>Desa el registre.</li>
+        <li data-i18n="manual.femtes.basic1"></li>
+        <li data-i18n="manual.femtes.basic2"></li>
+        <li data-i18n="manual.femtes.basic3"></li>
+        <li data-i18n="manual.femtes.basic4"></li>
       </ol>
     </section>
 
     <section class="card">
-      <h2>Gràfics i evolució</h2>
+      <h2 data-i18n="manual.femtes.charts_title"></h2>
 
-      <p>
-        Els gràfics permeten visualitzar patrons i canvis
-        en la regularitat intestinal.
-      </p>
+      <p data-i18n="manual.femtes.chart_p1"></p>
 
-      <p>
-        Els informes es poden exportar en PDF o CSV.
-      </p>
+      <p data-i18n="manual.femtes.chart_p2"></p>
     </section>
 
     <section class="card">
-      <h2>Privadesa</h2>
+      <h2 data-i18n="manual.common.privacy_title"></h2>
 
-      <p>
-        Les dades es desen exclusivament al dispositiu
-        i no es comparteixen automàticament.
-      </p>
+      <p data-i18n="manual.femtes.privacy_p"></p>
     </section>
 
   </main>
 
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/layout.js"></script>
+  <script>
+    renderLayout({
+      active: "manual",
+      basePath: "..",
+      subtitleKey: "manual.title",
+      showNav: false,
+      showLanguageSelector: false
+    });
+
+    const lang = new URLSearchParams(window.location.search).get("lang");
+    if (lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-preserve-lang]").forEach((link) => {
+        const url = new URL(link.getAttribute("href"), window.location.href);
+        url.searchParams.set("lang", lang);
+        link.href = url.pathname.split("/").pop() + url.search;
+      });
+    }
+  </script>
 </body>
 </html>

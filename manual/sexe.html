@@ -7,72 +7,84 @@
   <title>Manual Funció Sexual - PAC Suite</title>
 
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/manual.css" />
 </head>
 
 <body>
 
+  <div id="site-header"></div>
+
   <header class="hero">
-    <h1>Funció sexual</h1>
-    <p>Seguiment i evolució de la recuperació sexual</p>
+    <h1 data-i18n="manual.sexe.title"></h1>
+    <p data-i18n="manual.sexe.subtitle"></p>
   </header>
 
-  <main class="container">
+  <main class="manual-container">
 
-    <a class="back-link" href="index.html">
-      ← Tornar al manual
-    </a>
+    <a class="back-link" href="index.html" data-preserve-lang data-i18n="manual.back"></a>
 
     <section class="card">
-      <h2>Objectiu del mòdul</h2>
+      <h2 data-i18n="manual.sexe.objective_title"></h2>
 
-      <p>
-        Aquest mòdul permet registrar i visualitzar
-        l’evolució de la funció sexual durant processos
-        de recuperació mèdica o seguiment clínic.
-      </p>
+      <p data-i18n="manual.sexe.objective_p"></p>
     </section>
 
     <section class="card">
-      <h2>Què es pot registrar?</h2>
+      <h2 data-i18n="manual.sexe.register_title"></h2>
 
       <ul>
-        <li>Qüestionaris de seguiment.</li>
-        <li>Evolució temporal de les puntuacions.</li>
-        <li>Incidències o observacions personals.</li>
-        <li>Diferents perfils de seguiment.</li>
+        <li data-i18n="manual.sexe.reg1"></li>
+        <li data-i18n="manual.sexe.reg2"></li>
+        <li data-i18n="manual.sexe.reg3"></li>
+        <li data-i18n="manual.sexe.reg4"></li>
       </ul>
     </section>
 
     <section class="card">
-      <h2>Funcionament bàsic</h2>
+      <h2 data-i18n="manual.common.basic_title"></h2>
 
       <ol>
-        <li>Selecciona el qüestionari.</li>
-        <li>Respon les preguntes.</li>
-        <li>Desa el registre.</li>
-        <li>Consulta gràfics i informes d’evolució.</li>
+        <li data-i18n="manual.sexe.basic1"></li>
+        <li data-i18n="manual.sexe.basic2"></li>
+        <li data-i18n="manual.sexe.basic3"></li>
+        <li data-i18n="manual.sexe.basic4"></li>
       </ol>
     </section>
 
     <section class="card">
-      <h2>Privadesa</h2>
+      <h2 data-i18n="manual.common.privacy_title"></h2>
 
-      <p>
-        Les dades es desen exclusivament al dispositiu
-        i no s’envien a servidors externs.
-      </p>
+      <p data-i18n="manual.sexe.privacy_p"></p>
     </section>
 
     <section class="card">
-      <h2>Avís</h2>
+      <h2 data-i18n="manual.sexe.notice_title"></h2>
 
-      <p>
-        Aquesta eina no substitueix el diagnòstic
-        ni el seguiment per part de professionals sanitaris.
-      </p>
+      <p data-i18n="manual.sexe.notice_p"></p>
     </section>
 
   </main>
 
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/layout.js"></script>
+  <script>
+    renderLayout({
+      active: "manual",
+      basePath: "..",
+      subtitleKey: "manual.title",
+      showNav: false,
+      showLanguageSelector: false
+    });
+
+    const lang = new URLSearchParams(window.location.search).get("lang");
+    if (lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-preserve-lang]").forEach((link) => {
+        const url = new URL(link.getAttribute("href"), window.location.href);
+        url.searchParams.set("lang", lang);
+        link.href = url.pathname.split("/").pop() + url.search;
+      });
+    }
+  </script>
 </body>
 </html>

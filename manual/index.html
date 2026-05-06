@@ -4,66 +4,154 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>PAC Suite - Manual</title>
+  <title>PACient Actiu - Manual</title>
 
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/manual.css" />
 </head>
 
 <body>
+  <div id="site-header"></div>
 
-  <header class="hero">
-    <h1>PAC Suite</h1>
-    <p>Manual d'ús i inici ràpid</p>
-  </header>
+  <main class="manual-container">
 
-  <main class="container">
-
-    <section class="card">
-      <h2>Quick Start</h2>
-
-      <ol>
-        <li>Instal·la l'aplicació des de Google Play.</li>
-        <li>Selecciona el mòdul que vols utilitzar.</li>
-        <li>Introdueix els registres diaris.</li>
-        <li>Consulta gràfics i informes.</li>
-        <li>Exporta PDF o CSV si vols compartir-los.</li>
-      </ol>
-
-      <p>
-        PAC Suite funciona sense connexió a internet i les dades es desen
-        exclusivament al teu dispositiu.
-      </p>
+    <section class="manual-hero">
+      <div>
+        <p class="manual-kicker" data-i18n="manual.quick.kicker">Manual d’ús</p>
+        <h1 data-i18n="manual.quick.title">Guia ràpida d’inici</h1>
+        <p data-i18n="manual.quick.subtitle">
+          Primers passos per configurar l’app, començar a registrar dades i generar informes.
+        </p>
+      </div>
+      <img src="../assets/img/manual/home_modules.webp" alt="Pantalla principal de mòduls PAC" />
     </section>
 
-    <section class="card">
-      <h2>Mòduls</h2>
+    <section class="manual-card manual-intro-card">
+      <h2 data-i18n="manual.quick.startTitle">Per començar</h2>
+      <div class="quick-steps">
+        <div><span>1</span><strong data-i18n="manual.quick.step1">Configura les dades personals</strong></div>
+        <div><span>2</span><strong data-i18n="manual.quick.step2">Configura els absorbents del mòdul Uro</strong></div>
+        <div><span>3</span><strong data-i18n="manual.quick.step3">Prepara recipients de mesura</strong></div>
+        <div><span>4</span><strong data-i18n="manual.quick.step4">Registra dades diàries</strong></div>
+        <div><span>5</span><strong data-i18n="manual.quick.step5">Consulta gràfics i exporta informes</strong></div>
+      </div>
+    </section>
 
+    <section class="manual-section">
+      <h2 data-i18n="manual.quick.firstSteps">Primers passos</h2>
+
+      <div class="manual-block">
+        <figure class="manual-image small">
+          <img src="../assets/img/manual/settings_icon.webp" alt="Icona de configuració" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.quick.configTitle">1. Entra a configuració</h3>
+          <p data-i18n="manual.quick.configText">
+            Prem la icona de configuració i introdueix les dades personals que apareixeran als informes.
+          </p>
+          <div class="manual-note" data-i18n="manual.quick.idNote">
+            Pots afegir al camp de cognoms un identificador mèdic, número de SS o pòlissa per facilitar la identificació.
+          </div>
+        </div>
+      </div>
+
+      <div class="manual-block reverse">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/config_screen.webp" alt="Pantalla de configuració de l’app" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.quick.configDataTitle">2. Revisa dades i còpies</h3>
+          <p data-i18n="manual.quick.configDataText">
+            Des de configuració pots escollir l’idioma, fer una còpia de seguretat, validar una base de dades abans d’importar-la i consultar la informació general de registres.
+          </p>
+          <p data-i18n="manual.quick.saveText">
+            Finalment prem guardar per sortir.
+          </p>
+        </div>
+      </div>
+
+      <div class="manual-block">
+        <figure class="manual-image small">
+          <img src="../assets/img/manual/mode_day_bed.webp" alt="Icones de sol i llit" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.quick.nightTitle">3. Entén el mode nit</h3>
+          <div class="manual-important" data-i18n="manual.quick.nightImportant">
+            El mode nit no indica l’hora del dia: indica si estaves despert o dormint/al llit.
+          </div>
+          <p data-i18n="manual.quick.nightExample">
+            Per exemple, una micció a les 3:00 pot ser de dia si estaves despert, o de nit si estaves al llit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="manual-section alt">
+      <h2 data-i18n="manual.quick.navTitle">Navegació general</h2>
+      <figure class="manual-image nav">
+        <img src="../assets/img/manual/bottom_nav.webp" alt="Navegació inferior de l’aplicació" />
+      </figure>
+
+      <div class="manual-nav-list">
+        <div><strong data-i18n="manual.nav.home">Inici</strong><span data-i18n="manual.nav.homeText">selecció de mòduls</span></div>
+        <div><strong data-i18n="manual.nav.records">Registres</strong><span data-i18n="manual.nav.recordsText">entrada de dades</span></div>
+        <div><strong data-i18n="manual.nav.charts">Gràfics</strong><span data-i18n="manual.nav.chartsText">evolució i estadístiques</span></div>
+        <div><strong data-i18n="manual.nav.reports">Informes</strong><span data-i18n="manual.nav.reportsText">generació PDF</span></div>
+        <div><strong data-i18n="manual.nav.settings">Ajustos</strong><span data-i18n="manual.nav.settingsText">configuració i exportació</span></div>
+      </div>
+    </section>
+
+    <section class="manual-section">
+      <h2 data-i18n="manual.quick.pdfTitle">Exportació d’informes</h2>
+      <div class="manual-inline">
+        <img src="../assets/img/manual/pdf_icon.webp" alt="Icona PDF" />
+        <div>
+          <p data-i18n="manual.quick.pdfText">
+            Als apartats de gràfics i informes pots generar un PDF per compartir-lo amb professionals sanitaris.
+          </p>
+          <p data-i18n="manual.quick.pdfShare">
+            El PDF es pot enviar per correu, WhatsApp, Drive o imprimir-lo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="manual-section alt">
+      <h2 data-i18n="manual.quick.modulesTitle">Manuals dels mòduls</h2>
       <div class="module-grid">
-
         <a class="module-card" href="uro.html">
-          <h3>Urologia</h3>
-          <p>Miccions, ingesta, urgència i pèrdues.</p>
+          <h3 data-i18n="manual.module.uro">Urologia</h3>
+          <p data-i18n="manual.module.uroText">Miccions, ingesta, urgència, pèrdues i escapes.</p>
         </a>
-
         <a class="module-card" href="femtes.html">
-          <h3>Femtes</h3>
-          <p>Registre intestinal i escala de Bristol.</p>
+          <h3 data-i18n="manual.module.femtes">Femtes</h3>
+          <p data-i18n="manual.module.femtesText">Registre intestinal i escala de Bristol.</p>
         </a>
-
         <a class="module-card" href="kegel.html">
-          <h3>Kegel</h3>
-          <p>Exercicis, sessions i evolució.</p>
+          <h3 data-i18n="manual.module.kegel">Kegel</h3>
+          <p data-i18n="manual.module.kegelText">Exercicis, sessions i evolució.</p>
         </a>
-
         <a class="module-card" href="sexe.html">
-          <h3>Funció sexual</h3>
-          <p>Qüestionaris i seguiment.</p>
+          <h3 data-i18n="manual.module.sexe">Funció sexual</h3>
+          <p data-i18n="manual.module.sexeText">Qüestionaris i seguiment de recuperació.</p>
         </a>
-
       </div>
     </section>
 
   </main>
 
+  <div id="site-footer"></div>
+
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/layout.js"></script>
+  <script>
+    renderLayout({
+      active: "manual",
+      basePath: "..",
+      subtitleKey: "manual.title",
+      showNav: false,
+      showLanguageSelector: false
+    });
+  </script>
 </body>
 </html>

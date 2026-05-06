@@ -4,70 +4,162 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Manual Urologia - PAC Suite</title>
+  <title>Manual Urologia - PACient Actiu</title>
 
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/manual.css" />
 </head>
 
 <body>
+  <div id="site-header"></div>
 
-  <header class="hero">
-    <h1>Urologia</h1>
-    <p>Registre miccional i seguiment</p>
-  </header>
+  <main class="manual-container">
 
-  <main class="container">
+    <a class="back-link" href="index.html" data-i18n="manual.back">← Tornar al manual</a>
 
-    <a class="back-link" href="index.html">
-      ← Tornar al manual
-    </a>
-
-    <section class="card">
-      <h2>Què permet registrar?</h2>
-
-      <ul>
-        <li>Ingesta de líquids.</li>
-        <li>Miccions.</li>
-        <li>Pèrdues.</li>
-        <li>Urgència i episodis d’escapament.</li>
-      </ul>
+    <section class="manual-hero uro">
+      <div>
+        <p class="manual-kicker" data-i18n="manual.uro.kicker">Mòdul Uro</p>
+        <h1 data-i18n="manual.uro.title">Registres de Uro</h1>
+        <p data-i18n="manual.uro.subtitle">
+          Guia pràctica per registrar ingestes, miccions, pèrdues i escapes.
+        </p>
+      </div>
+      <img src="../assets/img/manual/uro_register.webp" alt="Pantalla de registre urològic" />
     </section>
 
-    <section class="card">
-      <h2>Funcionament bàsic</h2>
-
-      <ol>
-        <li>Prem el botó “+”.</li>
-        <li>Selecciona el tipus de registre.</li>
-        <li>Introdueix volum o observacions.</li>
-        <li>Desa el registre.</li>
-      </ol>
+    <section class="manual-card">
+      <h2 data-i18n="manual.uro.whatTitle">Què permet registrar?</h2>
+      <div class="quick-steps four">
+        <div><span>1</span><strong data-i18n="manual.uro.typeIngesta">Ingesta</strong></div>
+        <div><span>2</span><strong data-i18n="manual.uro.typeMiccio">Micció</strong></div>
+        <div><span>3</span><strong data-i18n="manual.uro.typePerdues">Pèrdues</strong></div>
+        <div><span>4</span><strong data-i18n="manual.uro.typeEscape">Escape</strong></div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Gràfics i informes</h2>
+    <section class="manual-section">
+      <h2 data-i18n="manual.uro.registerTitle">Com registrar correctament</h2>
 
-      <p>
-        Els gràfics permeten visualitzar l’evolució diària,
-        setmanal i mensual dels registres.
-      </p>
+      <div class="manual-block">
+        <figure class="manual-image wide">
+          <img src="../assets/img/manual/uro_date_time.webp" alt="Modificar data i hora" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.uro.dateTitle">Modificar data i hora</h3>
+          <p data-i18n="manual.uro.dateText">
+            Pots modificar el dia o l’hora per afegir registres passats. Si prems el requadre de data i hora, pots tornar al moment actual.
+          </p>
+        </div>
+      </div>
 
-      <p>
-        Els informes es poden exportar en PDF per compartir-los
-        amb professionals sanitaris.
-      </p>
+      <div class="manual-block reverse">
+        <figure class="manual-image small">
+          <img src="../assets/img/manual/mode_day_bed.webp" alt="Mode actiu i dormint" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.uro.sleepTitle">Actiu / dormint</h3>
+          <div class="manual-important" data-i18n="manual.uro.sleepImportant">
+            No és un concepte de dia/nit, sinó de despert/dormit.
+          </div>
+          <p data-i18n="manual.uro.sleepText">
+            Si a les 3 de la matinada estàs de peu, registra amb el sol. Si estàs al llit, registra amb la icona de llit.
+          </p>
+        </div>
+      </div>
+
+      <div class="manual-block">
+        <figure class="manual-image wide">
+          <img src="../assets/img/manual/uro_type_urgency.webp" alt="Tipus de registre i urgència" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.uro.typeTitle">Tipus de registre</h3>
+          <p data-i18n="manual.uro.typeText">
+            En seleccionar el tipus de registre apareixen opcions específiques: urgència en micció, tipus d’absorbent en pèrdues o situació de l’escape.
+          </p>
+        </div>
+      </div>
+
+      <div class="manual-block reverse">
+        <figure class="manual-image wide">
+          <img src="../assets/img/manual/uro_save_value.webp" alt="Validació i guardar registre" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.uro.validationTitle">Validació de dades</h3>
+          <p data-i18n="manual.uro.validationText">
+            Introdueix els valors en ml. En pèrdues es poden introduir decimals i el valor 0 és vàlid quan no hi ha hagut pèrdues durant aquell període.
+          </p>
+          <p data-i18n="manual.uro.saveText">
+            Quan el valor és correcte, el botó de guardar s’activa.
+          </p>
+        </div>
+      </div>
+
+      <div class="manual-block">
+        <figure class="manual-image wide">
+          <img src="../assets/img/manual/uro_edit_menu.webp" alt="Editar o eliminar registres" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.uro.editTitle">Modificar un registre</h3>
+          <p data-i18n="manual.uro.editText">
+            Per editar o eliminar un registre, prem els tres punts de la dreta i selecciona l’opció corresponent.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Privadesa</h2>
+    <section class="manual-section alt">
+      <h2 data-i18n="manual.uro.tipsTitle">Consells per l’inici</h2>
 
-      <p>
-        Les dades es desen exclusivament al dispositiu i no
-        s’envien a cap servidor.
-      </p>
+      <div class="tip-grid">
+        <article class="tip-card">
+          <h3 data-i18n="manual.uro.tipMeasureTitle">Recipient de mesura</h3>
+          <p data-i18n="manual.uro.tipMeasureText">
+            Utilitza un recipient graduat. Un de 250 ml acostuma a ser suficient, encara que a vegades calgui omplir-lo dues vegades.
+          </p>
+        </article>
+
+        <article class="tip-card">
+          <h3 data-i18n="manual.uro.tipScaleTitle">Bàscula petita</h3>
+          <p data-i18n="manual.uro.tipScaleText">
+            Els primers dies és útil una bàscula petita d’1 kg per mesurar gots, tasses o recipients habituals.
+          </p>
+        </article>
+
+        <article class="tip-card">
+          <h3 data-i18n="manual.uro.tipLossTitle">Pèrdues</h3>
+          <p data-i18n="manual.uro.tipLossText">
+            Per donar una informació correcta al metge, és convenient registrar com a mínim el canvi d’absorbent en aixecar-se i tots els canvis necessaris durant el dia.
+          </p>
+        </article>
+
+        <article class="tip-card">
+          <h3 data-i18n="manual.uro.tipContextTitle">Context de l’escape</h3>
+          <p data-i18n="manual.uro.tipContextText">
+            Quan hi hagi una pèrdua o escape, anota si s’ha produït tossint, caminant, rient, fent esforç o per urgència.
+          </p>
+        </article>
+      </div>
+
+      <div class="manual-important big" data-i18n="manual.uro.firstDays">
+        Al principi pot semblar una mica pesat, però quan tinguis configurades les mesures habituals podràs fer entrades molt ràpidament.
+      </div>
     </section>
 
   </main>
 
+  <div id="site-footer"></div>
+
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/layout.js"></script>
+  <script>
+    renderLayout({
+      active: "manual",
+      basePath: "..",
+      subtitleKey: "manual.title",
+      showNav: false,
+      showLanguageSelector: false
+    });
+  </script>
 </body>
 </html>

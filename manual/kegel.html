@@ -7,67 +7,84 @@
   <title>Manual Kegel - PAC Suite</title>
 
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/manual.css" />
 </head>
 
 <body>
 
+  <div id="site-header"></div>
+
   <header class="hero">
-    <h1>Kegel</h1>
-    <p>Entrenament del sòl pelvià</p>
+    <h1 data-i18n="manual.kegel.title"></h1>
+    <p data-i18n="manual.kegel.subtitle"></p>
   </header>
 
-  <main class="container">
+  <main class="manual-container">
 
-    <a class="back-link" href="index.html">
-      ← Tornar al manual
-    </a>
+    <a class="back-link" href="index.html" data-preserve-lang data-i18n="manual.back"></a>
 
     <section class="card">
-      <h2>Què permet registrar?</h2>
+      <h2 data-i18n="manual.common.register_title"></h2>
 
       <ul>
-        <li>Sessions d’exercicis Kegel.</li>
-        <li>Durada dels exercicis.</li>
-        <li>Nombre de repeticions i sèries.</li>
-        <li>Observacions personals.</li>
+        <li data-i18n="manual.kegel.reg1"></li>
+        <li data-i18n="manual.kegel.reg2"></li>
+        <li data-i18n="manual.kegel.reg3"></li>
+        <li data-i18n="manual.kegel.reg4"></li>
       </ul>
     </section>
 
     <section class="card">
-      <h2>Funcionament bàsic</h2>
+      <h2 data-i18n="manual.common.basic_title"></h2>
 
       <ol>
-        <li>Prem el botó “+”.</li>
-        <li>Selecciona el tipus de sessió.</li>
-        <li>Indica durada o repeticions.</li>
-        <li>Desa la sessió.</li>
+        <li data-i18n="manual.kegel.basic1"></li>
+        <li data-i18n="manual.kegel.basic2"></li>
+        <li data-i18n="manual.kegel.basic3"></li>
+        <li data-i18n="manual.kegel.basic4"></li>
       </ol>
     </section>
 
     <section class="card">
-      <h2>Gràfics i seguiment</h2>
+      <h2 data-i18n="manual.kegel.charts_title"></h2>
 
-      <p>
-        Els gràfics permeten veure la constància
-        i evolució dels entrenaments.
-      </p>
+      <p data-i18n="manual.kegel.chart_p1"></p>
 
-      <p>
-        Pots consultar dades per dia, setmana o mes.
-      </p>
+      <p data-i18n="manual.kegel.chart_p2"></p>
     </section>
 
     <section class="card">
-      <h2>Consells</h2>
+      <h2 data-i18n="manual.kegel.tips_title"></h2>
 
       <ul>
-        <li>Segueix sempre les indicacions mèdiques.</li>
-        <li>La constància és més important que la intensitat.</li>
-        <li>Evita forçar la musculatura.</li>
+        <li data-i18n="manual.kegel.tip1"></li>
+        <li data-i18n="manual.kegel.tip2"></li>
+        <li data-i18n="manual.kegel.tip3"></li>
       </ul>
     </section>
 
   </main>
 
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/layout.js"></script>
+  <script>
+    renderLayout({
+      active: "manual",
+      basePath: "..",
+      subtitleKey: "manual.title",
+      showNav: false,
+      showLanguageSelector: false
+    });
+
+    const lang = new URLSearchParams(window.location.search).get("lang");
+    if (lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-preserve-lang]").forEach((link) => {
+        const url = new URL(link.getAttribute("href"), window.location.href);
+        url.searchParams.set("lang", lang);
+        link.href = url.pathname.split("/").pop() + url.search;
+      });
+    }
+  </script>
 </body>
 </html>
