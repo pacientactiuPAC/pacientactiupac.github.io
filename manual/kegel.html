@@ -4,66 +4,138 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Manual Kegel - PAC Suite</title>
+  <title>Manual Kegel - PACient Actiu</title>
 
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/manual.css" />
 </head>
 
 <body>
-
   <div id="site-header"></div>
-
-  <header class="hero">
-    <h1 data-i18n="manual.kegel.title"></h1>
-    <p data-i18n="manual.kegel.subtitle"></p>
-  </header>
 
   <main class="manual-container">
 
-    <a class="back-link" href="index.html" data-preserve-lang data-i18n="manual.back"></a>
+    <a class="back-link" href="index.html" data-i18n="manual.back">← Tornar al manual</a>
 
-    <section class="card">
-      <h2 data-i18n="manual.common.register_title"></h2>
-
-      <ul>
-        <li data-i18n="manual.kegel.reg1"></li>
-        <li data-i18n="manual.kegel.reg2"></li>
-        <li data-i18n="manual.kegel.reg3"></li>
-        <li data-i18n="manual.kegel.reg4"></li>
-      </ul>
+    <section class="manual-hero uro">
+      <div>
+        <p class="manual-kicker" data-i18n="manual.kegel.kicker">Mòdul Kegel</p>
+        <h1 data-i18n="manual.kegel.title">Manual Kegel</h1>
+        <p data-i18n="manual.kegel.subtitle">
+          Guia pràctica per iniciar exercicis, configurar temps i seguir la constància.
+        </p>
+      </div>
+      <img src="../assets/img/manual/kegel_exercises.webp" alt="Pantalla d’exercicis de Kegel" />
     </section>
 
-    <section class="card">
-      <h2 data-i18n="manual.common.basic_title"></h2>
-
-      <ol>
-        <li data-i18n="manual.kegel.basic1"></li>
-        <li data-i18n="manual.kegel.basic2"></li>
-        <li data-i18n="manual.kegel.basic3"></li>
-        <li data-i18n="manual.kegel.basic4"></li>
-      </ol>
+    <section class="manual-card">
+      <h2 data-i18n="manual.kegel.objectiveTitle">Objectiu</h2>
+      <p data-i18n="manual.kegel.objectiveText">
+        El mòdul Kegel ajuda a fer el seguiment i l’execució dels exercicis per enfortir el sòl pelvià.
+      </p>
+      <div class="manual-note" data-i18n="manual.kegel.objectiveNote">
+        A diferència d’altres mòduls, el seu objectiu principal no és recollir dades mèdiques, sinó facilitar l’entrenament i la constància.
+      </div>
     </section>
 
-    <section class="card">
-      <h2 data-i18n="manual.kegel.charts_title"></h2>
+    <section class="manual-section">
+      <h2 data-i18n="manual.kegel.exerciseTitle">Inici d’exercici</h2>
 
-      <p data-i18n="manual.kegel.chart_p1"></p>
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/kegel_exercises.webp" alt="Selecció d’exercicis de Kegel" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.kegel.typesTitle">1. Escull el tipus d’exercici</h3>
+          <p data-i18n="manual.kegel.typesText">
+            Pots treballar amb exercici temporitzat, exercici ràpid o tronc propioceptiu, segons el tipus d’entrenament que vulguis fer.
+          </p>
+          <ul>
+            <li data-i18n="manual.kegel.typeTimed">Temporitzat: cicles guiats amb inspiració, contracció i repòs.</li>
+            <li data-i18n="manual.kegel.typeQuick">Ràpid: cicles més curts de contracció i relaxació.</li>
+            <li data-i18n="manual.kegel.typeProprio">Tronc: cronòmetre lliure sense cicles guiats.</li>
+          </ul>
+        </div>
+      </div>
 
-      <p data-i18n="manual.kegel.chart_p2"></p>
+      <div class="manual-block reverse">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/kegel_timer.webp" alt="Temporitzador de Kegel" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.kegel.timerTitle">2. Segueix el temporitzador</h3>
+          <p data-i18n="manual.kegel.timerText">
+            Quan comença l’exercici, la pantalla mostra el temps restant de cada fase i permet pausar, continuar o cancel·lar.
+          </p>
+          <div class="manual-important" data-i18n="manual.kegel.soundImportant">
+            Cada fase té un so diferent perquè puguis fer l’exercici sense mirar constantment la pantalla.
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2 data-i18n="manual.kegel.tips_title"></h2>
+    <section class="manual-section alt">
+      <h2 data-i18n="manual.kegel.configTitle">Configuració</h2>
 
-      <ul>
-        <li data-i18n="manual.kegel.tip1"></li>
-        <li data-i18n="manual.kegel.tip2"></li>
-        <li data-i18n="manual.kegel.tip3"></li>
-      </ul>
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/kegel_config.webp" alt="Configuració de Kegel" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.kegel.configTimesTitle">Temps i cicles</h3>
+          <p data-i18n="manual.kegel.configTimesText">
+            Des d’ajustos pots configurar els segons de cada fase i els cicles dels exercicis temporitzats i ràpids.
+          </p>
+          <p data-i18n="manual.kegel.csvText">
+            També pots exportar els registres en format CSV.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="manual-section">
+      <h2 data-i18n="manual.kegel.recordsTitle">Registres</h2>
+
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/kegel_records.webp" alt="Registres de Kegel" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.kegel.recordsViewTitle">Consulta i edita sessions</h3>
+          <p data-i18n="manual.kegel.recordsViewText">
+            A la pantalla de registres pots veure totes les sessions guardades i filtrar-les per dia, setmana, mes o total.
+          </p>
+          <ul>
+            <li data-i18n="manual.kegel.recordsAdd">Afegir nous registres.</li>
+            <li data-i18n="manual.kegel.recordsEdit">Modificar o eliminar registres existents.</li>
+            <li data-i18n="manual.kegel.recordsFilter">Veure totals de minuts per tipus i període.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="manual-section alt">
+      <h2 data-i18n="manual.kegel.chartsTitle">Gràfics</h2>
+
+      <div class="manual-block reverse">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/kegel_charts.webp" alt="Gràfics de Kegel" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.kegel.chartsViewTitle">Seguiment de la constància</h3>
+          <p data-i18n="manual.kegel.chartsViewText">
+            La pantalla de gràfics permet seleccionar períodes i veure el total de minuts per dia i per tipus d’exercici.
+          </p>
+          <div class="manual-important big" data-i18n="manual.kegel.finalTip">
+            La constància és més important que la intensitat. Segueix sempre les indicacions del professional sanitari.
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>
+
+  <div id="site-footer"></div>
 
   <script src="../assets/js/i18n.js"></script>
   <script src="../assets/js/layout.js"></script>
@@ -75,16 +147,6 @@
       showNav: false,
       showLanguageSelector: false
     });
-
-    const lang = new URLSearchParams(window.location.search).get("lang");
-    if (lang) {
-      document.documentElement.lang = lang;
-      document.querySelectorAll("[data-preserve-lang]").forEach((link) => {
-        const url = new URL(link.getAttribute("href"), window.location.href);
-        url.searchParams.set("lang", lang);
-        link.href = url.pathname.split("/").pop() + url.search;
-      });
-    }
   </script>
 </body>
 </html>

@@ -4,66 +4,137 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Manual Funció Sexual - PAC Suite</title>
+  <title>Manual Salut Sexual - PACient Actiu</title>
 
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/manual.css" />
 </head>
 
 <body>
-
   <div id="site-header"></div>
-
-  <header class="hero">
-    <h1 data-i18n="manual.sexe.title"></h1>
-    <p data-i18n="manual.sexe.subtitle"></p>
-  </header>
 
   <main class="manual-container">
 
-    <a class="back-link" href="index.html" data-preserve-lang data-i18n="manual.back"></a>
+    <a class="back-link" href="index.html" data-i18n="manual.back">← Tornar al manual</a>
 
-    <section class="card">
-      <h2 data-i18n="manual.sexe.objective_title"></h2>
-
-      <p data-i18n="manual.sexe.objective_p"></p>
+    <section class="manual-hero uro">
+      <div>
+        <p class="manual-kicker" data-i18n="manual.sexe.kicker">Mòdul Salut Sexual</p>
+        <h1 data-i18n="manual.sexe.title">Manual de Salut Sexual</h1>
+        <p data-i18n="manual.sexe.subtitle">
+          Guia pràctica per registrar qüestionaris, incidències i revisar l’evolució de la recuperació sexual.
+        </p>
+      </div>
+      <img src="../assets/img/manual/sexe_register.webp" alt="Pantalla principal de Salut Sexual" />
     </section>
 
-    <section class="card">
-      <h2 data-i18n="manual.sexe.register_title"></h2>
-
-      <ul>
-        <li data-i18n="manual.sexe.reg1"></li>
-        <li data-i18n="manual.sexe.reg2"></li>
-        <li data-i18n="manual.sexe.reg3"></li>
-        <li data-i18n="manual.sexe.reg4"></li>
-      </ul>
+    <section class="manual-card">
+      <h2 data-i18n="manual.sexe.objectiveTitle">Objectiu</h2>
+      <p data-i18n="manual.sexe.objectiveText">
+        Aquest mòdul permet fer el seguiment de la recuperació de la resposta sexual després de processos quirúrgics, neurològics, hormonals o altres situacions de seguiment clínic.
+      </p>
+      <div class="manual-note" data-i18n="manual.sexe.objectiveNote">
+        Està pensat tant per a homes com per a dones i utilitza qüestionaris breus adaptats al perfil de seguiment.
+      </div>
     </section>
 
-    <section class="card">
-      <h2 data-i18n="manual.common.basic_title"></h2>
+    <section class="manual-section">
+      <h2 data-i18n="manual.sexe.registerTitle">Registre de dades</h2>
 
-      <ol>
-        <li data-i18n="manual.sexe.basic1"></li>
-        <li data-i18n="manual.sexe.basic2"></li>
-        <li data-i18n="manual.sexe.basic3"></li>
-        <li data-i18n="manual.sexe.basic4"></li>
-      </ol>
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/sexe_register.webp" alt="Registre de qüestionari de salut sexual" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.sexe.questionnaireTitle">1. Respon el qüestionari</h3>
+          <p data-i18n="manual.sexe.questionnaireText">
+            Les dades es recullen amb un qüestionari de cinc preguntes, cadascuna amb cinc possibles respostes.
+          </p>
+          <p data-i18n="manual.sexe.profileText">
+            Des de la pantalla principal pots escollir el tipus de qüestionari segons el perfil configurat.
+          </p>
+        </div>
+      </div>
+
+      <div class="manual-block reverse">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/sexe_register.webp" alt="Qüestionari o incidència" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.sexe.incidentTitle">2. Registra incidències quan calgui</h3>
+          <p data-i18n="manual.sexe.incidentText">
+            També pots registrar incidències relacionades amb el procés de recuperació: inici o finalització d’un medicament, proves, intervencions o observacions importants.
+          </p>
+          <div class="manual-important" data-i18n="manual.sexe.incidentImportant">
+            Les incidències queden marcades als informes i ajuden a interpretar millor l’evolució.
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2 data-i18n="manual.common.privacy_title"></h2>
+    <section class="manual-section alt">
+      <h2 data-i18n="manual.sexe.configTitle">Configuració inicial</h2>
 
-      <p data-i18n="manual.sexe.privacy_p"></p>
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/sexe_config.webp" alt="Configuració del procés principal" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.sexe.processTitle">Defineix el procés de seguiment</h3>
+          <p data-i18n="manual.sexe.processText">
+            Informa la raó principal del seguiment, com ara cirurgia, radioteràpia, tractament hormonal o disfunció sexual, i indica la data d’inici del període d’observació.
+          </p>
+          <p data-i18n="manual.sexe.followupText">
+            També pots seleccionar el perfil de seguiment: recuperació neurogènica, hormonal, de la funció sexual o altres perfils disponibles.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2 data-i18n="manual.sexe.notice_title"></h2>
+    <section class="manual-section">
+      <h2 data-i18n="manual.sexe.reportsTitle">Informes</h2>
 
-      <p data-i18n="manual.sexe.notice_p"></p>
+      <div class="manual-block reverse">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/sexe_reports.webp" alt="Informe de salut sexual" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.sexe.reportsViewTitle">Resultats i valoració</h3>
+          <p data-i18n="manual.sexe.reportsViewText">
+            A la pantalla d’informes pots filtrar el període, consultar les totalitzacions i revisar la taula de resultats dels qüestionaris.
+          </p>
+          <p data-i18n="manual.sexe.reportsScoreText">
+            També s’hi mostra la taula de valoració per ajudar a interpretar les puntuacions de forma orientativa.
+          </p>
+          <div class="manual-important" data-i18n="manual.sexe.exportText">
+            Pots exportar l’informe en PDF amb la icona d’exportació.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="manual-section alt">
+      <h2 data-i18n="manual.sexe.chartsTitle">Gràfics</h2>
+
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/sexe_charts.webp" alt="Gràfics de salut sexual" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.sexe.chartsViewTitle">Evolució visual</h3>
+          <p data-i18n="manual.sexe.chartsViewText">
+            Els gràfics segueixen el mateix criteri que els informes: pots consultar períodes i veure l’evolució de les puntuacions.
+          </p>
+          <div class="manual-important big" data-i18n="manual.sexe.finalTip">
+            Aquest mòdul és una eina de seguiment. No substitueix la valoració mèdica ni les indicacions del professional sanitari.
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>
+
+  <div id="site-footer"></div>
 
   <script src="../assets/js/i18n.js"></script>
   <script src="../assets/js/layout.js"></script>
@@ -75,16 +146,6 @@
       showNav: false,
       showLanguageSelector: false
     });
-
-    const lang = new URLSearchParams(window.location.search).get("lang");
-    if (lang) {
-      document.documentElement.lang = lang;
-      document.querySelectorAll("[data-preserve-lang]").forEach((link) => {
-        const url = new URL(link.getAttribute("href"), window.location.href);
-        url.searchParams.set("lang", lang);
-        link.href = url.pathname.split("/").pop() + url.search;
-      });
-    }
   </script>
 </body>
 </html>

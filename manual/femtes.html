@@ -4,62 +4,151 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Manual Femtes - PAC Suite</title>
+  <title>Manual Diari Intestinal - PACient Actiu</title>
 
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/manual.css" />
 </head>
 
 <body>
-
   <div id="site-header"></div>
-
-  <header class="hero">
-    <h1 data-i18n="manual.femtes.title"></h1>
-    <p data-i18n="manual.femtes.subtitle"></p>
-  </header>
 
   <main class="manual-container">
 
-    <a class="back-link" href="index.html" data-preserve-lang data-i18n="manual.back"></a>
+    <a class="back-link" href="index.html" data-i18n="manual.back">← Tornar al manual</a>
 
-    <section class="card">
-      <h2 data-i18n="manual.common.register_title"></h2>
-
-      <ul>
-        <li data-i18n="manual.femtes.reg1"></li>
-        <li data-i18n="manual.femtes.reg2"></li>
-        <li data-i18n="manual.femtes.reg3"></li>
-        <li data-i18n="manual.femtes.reg4"></li>
-      </ul>
+    <section class="manual-hero uro">
+      <div>
+        <p class="manual-kicker" data-i18n="manual.femtes.kicker">Mòdul Femtes</p>
+        <h1 data-i18n="manual.femtes.title">Manual Diari Intestinal</h1>
+        <p data-i18n="manual.femtes.subtitle">
+          Guia pràctica per registrar la funció intestinal i revisar-ne l’evolució.
+        </p>
+      </div>
+      <img src="../assets/img/manual/femtes_register.webp" alt="Pantalla de registre intestinal" />
     </section>
 
-    <section class="card">
-      <h2 data-i18n="manual.common.basic_title"></h2>
-
-      <ol>
-        <li data-i18n="manual.femtes.basic1"></li>
-        <li data-i18n="manual.femtes.basic2"></li>
-        <li data-i18n="manual.femtes.basic3"></li>
-        <li data-i18n="manual.femtes.basic4"></li>
-      </ol>
+    <section class="manual-card">
+      <h2 data-i18n="manual.femtes.objectiveTitle">Objectiu</h2>
+      <p data-i18n="manual.femtes.objectiveText">
+        El diari intestinal permet registrar patrons i símptomes relacionats amb la salut digestiva.
+        Aquesta informació pot ajudar els professionals sanitaris a valorar freqüència, consistència,
+        urgència, molèsties, possible impacte de medicaments, estrès o alimentació.
+      </p>
+      <div class="manual-note" data-i18n="manual.femtes.objectiveNote">
+        El més important és registrar de manera constant i senzilla, sense complicar el procés si no hi ha incidències.
+      </div>
     </section>
 
-    <section class="card">
-      <h2 data-i18n="manual.femtes.charts_title"></h2>
+    <section class="manual-section">
+      <h2 data-i18n="manual.femtes.registerTitle">Com fer un registre</h2>
 
-      <p data-i18n="manual.femtes.chart_p1"></p>
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/femtes_register.webp" alt="Seleccionar tipus de femta" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.femtes.selectTitle">1. Selecciona el tipus de femta</h3>
+          <p data-i18n="manual.femtes.selectText">
+            Prem el selector del tipus de femta. S’obrirà la classificació de Bristol perquè puguis triar el tipus que més s’hi assembli.
+          </p>
+        </div>
+      </div>
 
-      <p data-i18n="manual.femtes.chart_p2"></p>
+      <div class="manual-block reverse">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/femtes_bristol.webp" alt="Escala de Bristol" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.femtes.bristolTitle">2. Escala de Bristol</h3>
+          <p data-i18n="manual.femtes.bristolText">
+            L’escala de Bristol classifica la femta del tipus 1 al 7. Els tipus 3 i 4 acostumen a considerar-se normals; el tipus 1 indica restrenyiment i el tipus 7 diarrea.
+          </p>
+          <div class="manual-important" data-i18n="manual.femtes.bristolImportant">
+            En condicions normals, sovint n’hi ha prou amb seleccionar el tipus Bristol i guardar el registre.
+          </div>
+        </div>
+      </div>
+
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/femtes_details.webp" alt="Detalls opcionals" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.femtes.detailsTitle">3. Afegeix detalls només si cal</h3>
+          <p data-i18n="manual.femtes.detailsText">
+            Si notes alguna cosa irregular, desplega l’apartat de detalls. Podràs indicar sang, moc, olor, evacuació incompleta, flotació, flatulència, dolor abdominal, medicació o notes.
+          </p>
+        </div>
+      </div>
+
+      <div class="manual-block reverse">
+        <figure class="manual-image wide">
+          <img src="../assets/img/manual/femtes_register.webp" alt="Esforç, volum i urgència" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.femtes.basicFieldsTitle">4. Esforç, volum i urgència</h3>
+          <p data-i18n="manual.femtes.basicFieldsText">
+            També pots informar l’esforç, el volum i la urgència. Aquestes dades ajuden a detectar patrons, però no cal omplir-les sempre si el registre és normal.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2 data-i18n="manual.common.privacy_title"></h2>
+    <section class="manual-section alt">
+      <h2 data-i18n="manual.femtes.chartsTitle">Gràfics</h2>
 
-      <p data-i18n="manual.femtes.privacy_p"></p>
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/femtes_charts.webp" alt="Gràfics del diari intestinal" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.femtes.chartsViewTitle">Visualitza l’evolució</h3>
+          <p data-i18n="manual.femtes.chartsViewText">
+            A la pantalla de gràfics pots consultar el total, els mesos o les setmanes i escollir el tipus de gràfic que vols veure.
+          </p>
+        </div>
+      </div>
+
+      <div class="manual-block reverse">
+        <figure class="manual-image wide">
+          <img src="../assets/img/manual/femtes_export_charts.webp" alt="Exportació de gràfics" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.femtes.exportTitle">Exporta els gràfics</h3>
+          <p data-i18n="manual.femtes.exportText">
+            En prémer la icona PDF, pots seleccionar quins gràfics vols incloure a l’informe abans d’exportar-lo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="manual-section">
+      <h2 data-i18n="manual.femtes.reportsTitle">Informes</h2>
+
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/femtes_reports.webp" alt="Informe intestinal" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.femtes.reportsViewTitle">Resum d’un cop d’ull</h3>
+          <p data-i18n="manual.femtes.reportsViewText">
+            La pantalla d’informes permet veure l’evolució setmanal o mensual de manera ràpida i gràfica.
+          </p>
+          <p data-i18n="manual.femtes.reportsIncidentsText">
+            Al final de la pàgina es mostra el recompte d’incidències o detalls registrats.
+          </p>
+        </div>
+      </div>
+
+      <div class="manual-important big" data-i18n="manual.femtes.finalTip">
+        Per començar, registra només el tipus Bristol. Afegeix detalls quan hi hagi dolor, urgència, diarrea, restrenyiment o qualsevol situació que vulguis comentar amb el metge.
+      </div>
     </section>
 
   </main>
+
+  <div id="site-footer"></div>
 
   <script src="../assets/js/i18n.js"></script>
   <script src="../assets/js/layout.js"></script>
@@ -71,16 +160,6 @@
       showNav: false,
       showLanguageSelector: false
     });
-
-    const lang = new URLSearchParams(window.location.search).get("lang");
-    if (lang) {
-      document.documentElement.lang = lang;
-      document.querySelectorAll("[data-preserve-lang]").forEach((link) => {
-        const url = new URL(link.getAttribute("href"), window.location.href);
-        url.searchParams.set("lang", lang);
-        link.href = url.pathname.split("/").pop() + url.search;
-      });
-    }
   </script>
 </body>
 </html>
