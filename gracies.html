@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Gràcies</title>
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet"
+        href="assets/css/style.css">
+</head>
+
+<body>
+
+<div id="site-header"></div>
+
+<main class="container">
+
+  <section class="download-hero">
+
+    <p class="download-kicker">
+      PACient Actiu
+    </p>
+
+    <h1 data-i18n="thanks_title">
+      Gràcies
+    </h1>
+
+    <p data-i18n="thanks_text">
+      Hem rebut la teva sol·licitud d’accés.
+    </p>
+
+    <a href="index.html"
+       class="btn-primary"
+       data-i18n="thanks_back_home">
+       Tornar a l’inici
+    </a>
+
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/layout.js"></script>
+
+<script>
+  renderLayout({
+    basePath: ".",
+    subtitleKey: "brand_subtitle"
+  });
+</script>
+
+</body>
+</html>

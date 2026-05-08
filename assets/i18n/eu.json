@@ -304,5 +304,8 @@
   "home_download_button": "Sarbidea eskatu",
   "download_availability_text": "PAC gaur egun proba kontrolatuen fasean dago, batez ere Espainian erabilgarri. Sarbidea aldatu daiteke herrialdearen eta Google Play konfigurazioaren arabera garapen fase desberdinetan.",
   "download_select_country": "Hautatu herrialdea",
-  "download_country_other": "Beste bat"
+  "download_country_other": "Beste bat",
+  "thanks_title": "Eskerrik asko",
+  "thanks_text": "Zure sarbide eskaera jaso dugu.",
+  "thanks_back_home": "Hasierara itzuli"
 }

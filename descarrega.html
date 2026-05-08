@@ -40,7 +40,7 @@
       <h2 data-i18n="download_form_title">Sol·licitar accés</h2>
 
       <form
-        action="https://formsubmit.co/support@pacientactiu.com"
+        action="https://formsubmit.co/421dabe0d51aa1e4309cf762323fcd95"
         method="POST"
         class="download-form"
       >
@@ -56,12 +56,12 @@
         <input type="hidden"
               name="_template"
               value="table">
+        <input
+              type="hidden"
+              name="_next"
+              value="https://pacientactiu.com/gracies.html">
 
         <label data-i18n="download_country_label">
-          País
-        </label>
-
-        <label data-i18n="download_country">
           País
         </label>
 
@@ -98,6 +98,22 @@
           </option>
         </select>
 
+        <div id="other-country-wrapper" hidden>
+
+          <label for="other-country"
+                data-i18n="download_other_country">
+            Indica el país
+          </label>
+
+          <input
+            type="text"
+            id="other-country"
+            name="other_country"
+            data-i18n-placeholder="download_other_country_placeholder"
+            placeholder="Country"
+          >
+
+        </div>
         <label data-i18n="download_email_label">
           Correu Google Play
         </label>
@@ -149,9 +165,10 @@
 
         <button
           type="submit"
-          class="btn-primary"
+          class="btn-primary download-submit"
           onclick="trackTesterRequestStart()"
-          data-i18n="download_submit">
+          data-i18n="download_submit"
+          disabled>
           Sol·licitar accés
         </button>
       </form>
@@ -168,7 +185,7 @@
 <script src="/assets/js/i18n.js"></script>
 <script src="/assets/js/layout.js"></script>
 <script src="/assets/js/analytics.js"></script>
-<script src="/assets/js/download.js"></script>
+<script src="/assets/js/download.js?v=3"></script>
 <script>
   renderLayout({
     active: "download",

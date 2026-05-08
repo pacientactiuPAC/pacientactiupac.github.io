@@ -1,53 +1,86 @@
-function currentLang() {
-  return localStorage.getItem("lang") || "ca";
+function trackDownloadPage() {
+  if (typeof gtag === "function") {
+    gtag("event", "download_page_view", {
+      page_location: window.location.href,
+      page_title: document.title
+    });
+  }
 }
 
-function valueOf(id) {
-  const el = document.getElementById(id);
-  return el ? el.value.trim() : "";
+function trackTesterRequestStart() {
+  const countryEl = document.querySelector('select[name="country"]');
+  const profileEl = document.querySelector('select[name="profile"]');
+  const otherCountryEl = document.getElementById("other-country");
+
+  const country =
+    countryEl && countryEl.value === "OTHER" && otherCountryEl
+      ? `OTHER: ${otherCountryEl.value.trim()}`
+      : countryEl
+        ? countryEl.value
+        : "";
+
+  if (typeof gtag === "function") {
+    gtag("event", "tester_request_start", {
+      source: "download_page",
+      method: "formsubmit",
+      country: country,
+      profile: profileEl ? profileEl.value : ""
+    });
+  }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("tester-request-form");
-  if (!form) return;
+function setupDownloadFormState() {
+  const form = document.querySelector(".download-form");
+  const button = document.querySelector(".download-submit");
 
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
+  if (!form || !button) return;
 
-    const name = valueOf("req-name");
-    const country = valueOf("req-country");
-    const email = valueOf("req-email");
-    const profileEl = document.getElementById("req-profile");
-    const profile = profileEl ? profileEl.value : "";
-    const profileText = profileEl ? profileEl.options[profileEl.selectedIndex].text : "";
-    const comment = valueOf("req-comment");
+  function updateSubmitState() {
+    const isValid = form.checkValidity();
 
-    if (!country || !email || !profile) {
-      form.reportValidity();
-      return;
+    button.disabled = !isValid;
+    button.classList.toggle("is-ready", isValid);
+  }
+
+  form.addEventListener("input", updateSubmitState);
+  form.addEventListener("change", updateSubmitState);
+
+  updateSubmitState();
+}
+
+function setupOtherCountryField() {
+  const countrySelect = document.querySelector('select[name="country"]');
+  const otherWrapper = document.getElementById("other-country-wrapper");
+  const otherInput = document.getElementById("other-country");
+
+  if (!countrySelect || !otherWrapper || !otherInput) {
+    console.warn("Other country field not initialized");
+    return;
+  }
+
+  function updateOtherCountry() {
+    const isOther = countrySelect.value === "OTHER";
+
+    otherWrapper.hidden = !isOther;
+    otherWrapper.style.display = isOther ? "block" : "none";
+
+    otherInput.required = isOther;
+
+    if (!isOther) {
+      otherInput.value = "";
     }
+  }
 
-    if (typeof trackTesterRequest === "function") {
-      trackTesterRequest(profile, country);
-    }
+  countrySelect.addEventListener("change", updateOtherCountry);
+  updateOtherCountry();
+}
 
-    const subject = t("download_mail_subject");
-    const intro = t("download_mail_intro");
-    const body = `${intro}` +
-      `Nom / entitat: ${name || "-"}
-` +
-      `País: ${country}
-` +
-      `Correu Google Play: ${email}
-` +
-      `Perfil: ${profileText} (${profile})
-` +
-      `Idioma web: ${currentLang()}
-` +
-      `Comentari: ${comment || "-"}
-`;
-
-    const mailto = `mailto:support@pacientactiu.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailto;
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", () => {
+    setupOtherCountryField();
+    setupDownloadFormState();
   });
-});
+} else {
+  setupOtherCountryField();
+  setupDownloadFormState();
+}

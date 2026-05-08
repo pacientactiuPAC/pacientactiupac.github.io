@@ -312,5 +312,8 @@
   "home_download_button": "Sol·licitar accés",
   "download_availability_text": "PAC es troba actualment en fase de prova controlada amb disponibilitat principal a Espanya. L’accés pot variar segons el país i la configuració de Google Play durant les diferents fases de desenvolupament.",
   "download_select_country": "Selecciona país",
-  "download_country_other": "Altre"
+  "download_country_other": "Altre",
+  "thanks_title": "Gràcies",
+  "thanks_text": "Hem rebut la teva sol·licitud d’accés.",
+  "thanks_back_home": "Tornar a l’inici"
 }
