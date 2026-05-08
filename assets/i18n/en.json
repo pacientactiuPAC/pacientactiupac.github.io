@@ -301,5 +301,8 @@
   "download_note_text": "PAC is a support tool and does not replace professional medical judgement. Health data recorded in the app is stored locally on the device.",
   "home_download_title": "Would you like to try the app?",
   "home_download_text": "The app is in controlled testing. You can request access and help us understand which user profiles are interested.",
-  "home_download_button": "Request access"
+  "home_download_button": "Request access",
+  "download_availability_text": "PAC is currently in a controlled testing phase with primary availability in Spain. Access may vary depending on the country and Google Play configuration during different development phases.",
+  "download_select_country": "Select country",
+  "download_country_other": "Other"
 }

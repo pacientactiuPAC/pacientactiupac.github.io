@@ -301,5 +301,8 @@
   "download_note_text": "PAC laguntza-tresna bat da eta ez du ordezkatzen mediku profesionalaren irizpidea. Aplikazioan erregistratutako osasun-datuak gailuan bertan gordetzen dira.",
   "home_download_title": "Aplikazioa probatu nahi duzu?",
   "home_download_text": "Aplikazioa proba kontrolatuan dago. Sarbidea eska dezakezu eta interesa duen erabiltzaile-profila ulertzen lagundu.",
-  "home_download_button": "Sarbidea eskatu"
+  "home_download_button": "Sarbidea eskatu",
+  "download_availability_text": "PAC gaur egun proba kontrolatuen fasean dago, batez ere Espainian erabilgarri. Sarbidea aldatu daiteke herrialdearen eta Google Play konfigurazioaren arabera garapen fase desberdinetan.",
+  "download_select_country": "Hautatu herrialdea",
+  "download_country_other": "Beste bat"
 }

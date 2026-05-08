@@ -309,5 +309,8 @@
   "download_note_text": "PAC és una eina de suport i no substitueix el criteri mèdic professional. Les dades de salut registrades a l’app es desen localment al dispositiu.",
   "home_download_title": "Vols provar l’aplicació?",
   "home_download_text": "L’app està en fase de prova controlada. Pots sol·licitar accés i ajudar-nos a entendre quin perfil d’usuari hi està interessat.",
-  "home_download_button": "Sol·licitar accés"
+  "home_download_button": "Sol·licitar accés",
+  "download_availability_text": "PAC es troba actualment en fase de prova controlada amb disponibilitat principal a Espanya. L’accés pot variar segons el país i la configuració de Google Play durant les diferents fases de desenvolupament.",
+  "download_select_country": "Selecciona país",
+  "download_country_other": "Altre"
 }
