@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Descarrega l’app PACient Actiu</title>
+  <meta name="description" content="Sol·licita accés a la prova controlada de l’aplicació PACient Actiu.">
+  <link rel="canonical" href="https://pacientactiu.com/descarrega.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main class="container download-page">
+  <section class="download-hero">
+    <p class="download-kicker" data-i18n="download_kicker">Accés a la prova controlada</p>
+    <h1 data-i18n="download_title">Descarrega l’app PAC</h1>
+    <p data-i18n="download_intro">
+      PACient Actiu es troba actualment en fase de prova tancada. Si vols provar l’aplicació, pots sol·licitar accés indicant el país i el correu de Google Play que utilitzaràs per instal·lar-la.
+    </p>
+  </section>
+
+  <section class="download-grid">
+    <article class="download-card">
+      <h2 data-i18n="download_status_title">Estat actual</h2>
+      <p data-i18n="download_status_text">
+        L’accés és manual i pot estar limitat segons el país configurat a Google Play. Quan el correu estigui autoritzat, rebràs les instruccions o l’enllaç de prova corresponent.
+      </p>
+
+      <div class="download-note">
+        <strong data-i18n="download_note_title">Important</strong>
+        <p data-i18n="download_note_text">
+          PAC és una eina de suport i no substitueix el criteri mèdic professional. Les dades de salut registrades a l’app es desen localment al dispositiu.
+        </p>
+      </div>
+    </article>
+
+    <article class="download-card download-form-card">
+      <h2 data-i18n="download_form_title">Sol·licitar accés</h2>
+
+      <form
+        action="https://formsubmit.co/support@pacientactiu.com"
+        method="POST"
+        class="download-form"
+      >
+
+        <input type="hidden"
+              name="_subject"
+              value="Nova sol·licitud d'accés PAC">
+
+        <input type="hidden"
+              name="_captcha"
+              value="false">
+
+        <input type="hidden"
+              name="_template"
+              value="table">
+
+        <label data-i18n="download_country_label">
+          País
+        </label>
+
+        <input
+          type="text"
+          name="country"
+          required
+        >
+
+        <label data-i18n="download_email_label">
+          Correu Google Play
+        </label>
+
+        <input
+          type="email"
+          name="email"
+          required
+        >
+
+        <label data-i18n="download_profile_label">
+          Perfil
+        </label>
+
+       <select name="profile" required>
+          <option value="" disabled selected data-i18n="download_profile_label">
+            Selecciona perfil
+          </option>
+          <option data-i18n="download_profile_patient">Pacient</option>
+          <option data-i18n="download_profile_professional">Professional sanitari</option>
+          <option data-i18n="download_profile_tester">Tester tècnic</option>
+          <option data-i18n="download_profile_other">Altre</option>
+        </select>
+
+        <label data-i18n="download_comment_label">
+          Comentaris
+        </label>
+
+        <textarea
+          name="comments"
+          rows="5"
+        ></textarea>
+
+        <label class="download-check">
+          <input type="checkbox" required
+           aria-label="Accept privacy policy">
+          <span>
+            <span data-i18n="download_privacy_label">
+              He llegit i accepto la
+            </span>
+
+            <a href="privacitat.html"
+              target="_blank"
+              data-i18n="menu_privacy">
+              política de privacitat
+            </a>
+          </span>
+        </label>
+
+        <button
+          type="submit"
+          class="btn-primary"
+          onclick="trackTesterRequestStart()"
+          data-i18n="download_submit">
+          Sol·licitar accés
+        </button>
+      </form>
+
+      <p class="download-alt" data-i18n="download_manual_alt">
+        Si prefereixes escriure directament, pots contactar amb support@pacientactiu.com.
+      </p>
+    </article>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/layout.js"></script>
+<script src="/assets/js/analytics.js"></script>
+<script src="/assets/js/download.js"></script>
+<script>
+  renderLayout({
+    active: "download",
+    basePath: ".",
+    subtitleKey: "brand_subtitle"
+  });
+  trackDownloadPage();
+</script>
+</body>
+</html>

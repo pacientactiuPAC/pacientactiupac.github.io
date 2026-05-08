@@ -626,6 +626,22 @@ main p {
   color: #777;
 }
 
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 0.45rem;
+
+  margin-top: 0.5rem;
+}
+
+.footer-contact-label {
+  font-weight: 700;
+  color: #555;
+}
+
 /* TABLET */
 
 @media (max-width: 900px) {
@@ -977,3 +993,170 @@ main p {
   border-bottom: 1px solid #e3e8f0;
 }
 
+/* =========================================
+   DOWNLOAD PAGE
+========================================= */
+
+.download-page {
+  max-width: 1000px;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.download-hero,
+.download-card {
+  background: white;
+  border-radius: 20px;
+  border: 1px solid #e3e8f0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.download-hero {
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  padding: 26px 24px;
+  text-align: center;
+}
+
+.download-kicker {
+  margin: 0 0 0.5rem;
+  color: #607d8b;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+.download-hero h1 {
+  color: #1565C0;
+  margin: 0 0 1rem;
+}
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.download-card {
+  padding: 1.5rem;
+}
+
+.download-card h2 {
+  margin-top: 0;
+}
+
+.download-note {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 14px;
+  background: #f1f5f9;
+  border-left: 4px solid #1565C0;
+}
+
+.download-note p {
+  margin-bottom: 0;
+}
+
+/* FORM */
+
+.download-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.download-form label {
+  font-weight: 700;
+  color: #34495e;
+}
+
+.download-form input,
+.download-form select,
+.download-form textarea {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border-radius: 14px;
+  border: 2px solid #b8c4d2;
+  background: #ffffff;
+  color: #333;
+  font: inherit;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.download-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.download-form input:focus,
+.download-form select:focus,
+.download-form textarea:focus {
+  outline: none;
+  border-color: #1565C0;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(21,101,192,0.16);
+}
+
+.download-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.download-check input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  margin-top: 0.05rem;
+  accent-color: #1565C0;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.download-check a {
+  font-weight: 700;
+}
+
+.download-form button {
+  margin-top: 1rem;
+  width: 100%;
+  min-height: 58px;
+  padding: 1rem 1.25rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 16px;
+}
+
+.download-alt {
+  margin-top: 1rem;
+  font-size: 0.92rem;
+  color: #666;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .download-page {
+    padding-top: 1rem;
+  }
+
+  .download-card,
+  .download-hero {
+    padding: 1.2rem;
+  }
+
+  .download-grid {
+    grid-template-columns: 1fr;
+  }
+}

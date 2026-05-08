@@ -34,6 +34,10 @@ function renderHeader({
                    class="${active === "home" ? "active" : ""}"
                    data-i18n="menu_home">Inici</a>
 
+                <a href="${basePath}/descarrega.html"
+                   class="${active === "download" ? "active" : ""}"
+                   data-i18n="menu_download">Descarrega</a>
+
                 <a href="${basePath}/privacitat.html"
                    class="${active === "privacy" ? "active" : ""}"
                    data-i18n="menu_privacy">Privacitat</a>
@@ -41,6 +45,7 @@ function renderHeader({
                 <a href="${basePath}/disclaimer.html"
                    class="${active === "legal" ? "active" : ""}"
                    data-i18n="menu_legal">Avís legal</a>
+                
               </nav>
             `
             : ""
@@ -83,11 +88,20 @@ function renderFooter({ basePath = "." } = {}) {
         PACient Actiu (PAC)<sup>©</sup>
       </div>
 
-      <div class="contact">
-        <span data-i18n="footer_contact">Contacte:</span>
-        <a href="mailto:pacientactiu.app@gmail.com">
-          pacientactiu.app@gmail.com
-        </a>
+      <div class="footer-contact">
+
+        <span class="footer-contact-label" data-i18n="footer_contact">
+         ✉ Contacte:
+        </span>
+
+        <a href="mailto:info@pacientactiu.com">Info</a>
+        <span>·</span>
+
+        <a href="mailto:support@pacientactiu.com">Support</a>
+        <span>·</span>
+
+        <a href="mailto:privacy@pacientactiu.com">Privacy</a>
+
       </div>
 
       <div class="contact-note" data-i18n="footer_contact_note">

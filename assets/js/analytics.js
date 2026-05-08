@@ -42,3 +42,18 @@ function trackAppModule(moduleName) {
     page_title: document.title
   });
 }
+
+function trackDownloadPage() {
+  gtag("event", "download_page_view", {
+    page_location: window.location.href,
+    page_title: document.title
+  });
+}
+
+function trackTesterRequest(profile, country) {
+  gtag("event", "tester_request", {
+    profile: profile || "unknown",
+    country: country || "unknown",
+    page_location: window.location.href
+  });
+}
