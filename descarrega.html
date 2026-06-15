@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Descarrega l’app PACient Actiu</title>
-  <meta name="description" content="Sol·licita accés a la prova controlada de l’aplicació PACient Actiu.">
+  <meta name="description" content="Descarrega l’aplicació PACient Actiu des de Google Play i envia consultes o opinions sobre la prova oberta.">
   <link rel="canonical" href="https://pacientactiu.com/descarrega.html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -14,10 +14,10 @@
 
 <main class="container download-page">
   <section class="download-hero">
-    <p class="download-kicker" data-i18n="download_kicker">Accés a la prova controlada</p>
+    <p class="download-kicker" data-i18n="download_kicker">Prova oberta a Google Play</p>
     <h1 data-i18n="download_title">Descarrega l’app PAC</h1>
     <p data-i18n="download_intro">
-      PACient Actiu es troba actualment en fase de prova tancada. Si vols provar l’aplicació, pots sol·licitar accés indicant el país i el correu de Google Play que utilitzaràs per instal·lar-la.
+      PACient Actiu ja es pot descarregar des de Google Play dins del programa de prova oberta. No cal sol·licitar accés ni estar inclòs manualment en una llista de betatesters.
     </p>
   </section>
 
@@ -25,7 +25,31 @@
     <article class="download-card">
       <h2 data-i18n="download_status_title">Estat actual</h2>
       <p data-i18n="download_status_text">
-        L’accés és manual i pot estar limitat segons el país configurat a Google Play. Quan el correu estigui autoritzat, rebràs les instruccions o l’enllaç de prova corresponent.
+        L’app està disponible en prova oberta. Qualsevol usuari amb un compte de Google Play pot accedir a la pàgina de la prova, unir-se al programa i instal·lar l’aplicació si el seu dispositiu és compatible.
+      </p>
+
+      <a
+        class="btn-primary download-store-button"
+        href="https://play.google.com/apps/testing/com.pacientactiu.controldesalut"
+        target="_blank"
+        rel="noopener"
+        onclick="trackPlayStoreClick('web')"
+        data-i18n="download_play_web_button">
+        Unir-se a la prova oberta
+      </a>
+
+      <a
+        class="btn-secondary download-store-button download-store-button-secondary"
+        href="https://play.google.com/store/apps/details?id=com.pacientactiu.controldesalut"
+        target="_blank"
+        rel="noopener"
+        onclick="trackPlayStoreClick('android')"
+        data-i18n="download_play_android_button">
+        Obrir directament a Google Play
+      </a>
+
+      <p class="download-alt" data-i18n="download_play_alt">
+        Recomanem començar pel botó “Unir-se a la prova oberta”. Un cop acceptada la participació, Google Play permet instal·lar l’aplicació. El segon botó obre directament la fitxa de l’app a Android.
       </p>
 
       <div class="download-note">
@@ -37,17 +61,20 @@
     </article>
 
     <article class="download-card download-form-card">
-      <h2 data-i18n="download_form_title">Sol·licitar accés</h2>
+      <h2 data-i18n="download_form_title">Consultes i opinions</h2>
+      <p data-i18n="download_form_intro">
+        Pots utilitzar aquest formulari per enviar suggeriments, comunicar problemes o explicar-nos la teva experiència amb la prova oberta.
+      </p>
 
       <form
-        action="https://formsubmit.co/421dabe0d51aa1e4309cf762323fcd95"
+        action="https://formsubmit.co/support@pacientactiu.com"
         method="POST"
         class="download-form"
       >
 
         <input type="hidden"
               name="_subject"
-              value="Nova sol·licitud d'accés PAC">
+              value="Consulta o opinió PACient Actiu">
 
         <input type="hidden"
               name="_captcha"
@@ -56,72 +83,25 @@
         <input type="hidden"
               name="_template"
               value="table">
-        <input
-              type="hidden"
-              name="_next"
-              value="https://pacientactiu.com/gracies.html">
 
-        <label data-i18n="download_country_label">
-          País
+        <label data-i18n="download_name_label">
+          Nom o entitat (opcional)
         </label>
 
-        <select name="country" required>
-          <option value="" disabled selected
-                  data-i18n="download_select_country">
-            Select country
-          </option>
+        <input
+          type="text"
+          name="name"
+          autocomplete="name"
+        >
 
-          <option value="ES">España</option>
-          <option value="DE">Deutschland</option>
-          <option value="AT">Österreich</option>
-          <option value="BE">Belgique</option>
-          <option value="BG">България</option>
-          <option value="CR">Costa Rica</option>
-
-          <option value="SK">Slovensko</option>
-          <option value="SI">Slovenija</option>
-          <option value="FR">France</option>
-          <option value="HU">Magyarország</option>
-
-          <option value="IT">Italia</option>
-          <option value="NO">Norge</option>
-          <option value="NL">Nederland</option>
-          <option value="PL">Polska</option>
-
-          <option value="PT">Portugal</option>
-          <option value="GB">United Kingdom</option>
-          <option value="RO">România</option>
-
-          <option value="OTHER"
-                  data-i18n="download_country_other">
-            Other
-          </option>
-        </select>
-
-        <div id="other-country-wrapper" hidden>
-
-          <label for="other-country"
-                data-i18n="download_other_country">
-            Indica el país
-          </label>
-
-          <input
-            type="text"
-            id="other-country"
-            name="other_country"
-            data-i18n-placeholder="download_other_country_placeholder"
-            placeholder="Country"
-          >
-
-        </div>
         <label data-i18n="download_email_label">
-          Correu Google Play
+          Correu electrònic (opcional)
         </label>
 
         <input
           type="email"
           name="email"
-          required
+          autocomplete="email"
         >
 
         <label data-i18n="download_profile_label">
@@ -129,22 +109,24 @@
         </label>
 
        <select name="profile" required>
-          <option value="" disabled selected data-i18n="download_profile_label">
+          <option value="" disabled selected data-i18n="download_profile_select">
             Selecciona perfil
           </option>
           <option data-i18n="download_profile_patient">Pacient</option>
           <option data-i18n="download_profile_professional">Professional sanitari</option>
+          <option data-i18n="download_profile_caregiver">Familiar o cuidador/a</option>
           <option data-i18n="download_profile_tester">Tester tècnic</option>
           <option data-i18n="download_profile_other">Altre</option>
         </select>
 
         <label data-i18n="download_comment_label">
-          Comentaris
+          Consulta o opinió
         </label>
 
         <textarea
           name="comments"
           rows="5"
+          required
         ></textarea>
 
         <label class="download-check">
@@ -165,11 +147,10 @@
 
         <button
           type="submit"
-          class="btn-primary download-submit"
-          onclick="trackTesterRequestStart()"
-          data-i18n="download_submit"
-          disabled>
-          Sol·licitar accés
+          class="btn-primary"
+          onclick="trackFeedbackRequestStart()"
+          data-i18n="download_submit">
+          Enviar consulta o opinió
         </button>
       </form>
 
@@ -185,7 +166,7 @@
 <script src="/assets/js/i18n.js"></script>
 <script src="/assets/js/layout.js"></script>
 <script src="/assets/js/analytics.js"></script>
-<script src="/assets/js/download.js?v=3"></script>
+<script src="/assets/js/download.js"></script>
 <script>
   renderLayout({
     active: "download",

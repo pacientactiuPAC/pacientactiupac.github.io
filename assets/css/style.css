@@ -1144,23 +1144,6 @@ main p {
   color: #666;
 }
 
-.download-submit:disabled {
-  background: #c7ced8;
-  color: #ffffff;
-  cursor: not-allowed;
-  opacity: 0.75;
-}
-
-.download-submit.is-ready {
-  background: #2e7d32;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.download-submit.is-ready:hover {
-  background: #1b5e20;
-}
-
 /* MOBILE */
 
 @media (max-width: 700px) {
@@ -1176,4 +1159,24 @@ main p {
   .download-grid {
     grid-template-columns: 1fr;
   }
+}
+.download-store-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 58px;
+  margin-top: 1.25rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+
+.download-store-button-secondary {
+  margin-top: 0.75rem;
+  background: #fff;
+  color: #1565c0;
+  border: 1px solid #1565c0;
 }
