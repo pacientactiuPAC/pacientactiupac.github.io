@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manual Medicaments - PACient Actiu</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/manual.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="manual-container">
+    <a class="back-link" href="index.html">← Tornar al manual</a>
+
+    <section class="manual-hero">
+      <div>
+        <p class="manual-kicker">Mòdul Medicaments</p>
+        <h1>Control de medicació</h1>
+        <p>Registra i consulta la medicació habitual i el seu seguiment.</p>
+      </div>
+    </section>
+
+    <section class="manual-card">
+      <h2>Manual en preparació</h2>
+      <p>
+        Aquest mòdul forma part de la nova versió de PAC Salut. El manual complet s'està preparant
+        i s'incorporarà en aquesta mateixa adreça quan estigui disponible.
+      </p>
+      <div class="manual-important big">
+        Pots continuar utilitzant el mòdul amb normalitat. Aquesta pàgina provisional evita errors
+        d'accés mentre es completa la nova web de PACient Actiu.
+      </div>
+    </section>
+
+    <section class="manual-section alt">
+      <h2>Ajuda</h2>
+      <p>
+        Si necessites informació general sobre PAC Salut, torna al manual principal des de l'enllaç superior.
+      </p>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/layout.js"></script>
+  <script>
+    renderLayout({
+      active: "manual",
+      basePath: "..",
+      subtitleKey: "manual.title",
+      showNav: false,
+      showLanguageSelector: false
+    });
+  </script>
+  <script src="/assets/js/analytics.js"></script>
+  <script>
+    if (typeof trackManualModule === "function") trackManualModule("medicaments");
+  </script>
+</body>
+</html>
