@@ -3,43 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Manual Respiratori - PACient Actiu</title>
+
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/manual.css" />
 </head>
+
 <body>
   <div id="site-header"></div>
-  <main class="manual-container">
-    <a class="back-link" href="index.html">← Tornar al manual</a>
 
-    <section class="manual-hero">
+  <main class="manual-container">
+
+    <a class="back-link" href="index.html" data-i18n="manual.back">← Tornar al manual</a>
+
+    <section class="manual-hero uro">
       <div>
-        <p class="manual-kicker">Mòdul Respiratori</p>
-        <h1>Seguiment respiratori</h1>
-        <p>Registra i consulta les dades del mòdul respiratori.</p>
+        <p class="manual-kicker" data-i18n="manual.resp.kicker">Mòdul Respiratori</p>
+        <h1 data-i18n="manual.resp.title">Manual Respiratori</h1>
+        <p data-i18n="manual.resp.subtitle">Guia pràctica per registrar saturació d’oxigen, espirometries i pic de flux, sigui quin sigui l’aparell que utilitzis.</p>
       </div>
+      <img src="../assets/img/manual/respiratori_register.webp" alt="Pantalla de registre de Respiratori" />
     </section>
 
     <section class="manual-card">
-      <h2>Manual en preparació</h2>
-      <p>
-        Aquest mòdul forma part de la nova versió de PAC Salut. El manual complet s'està preparant
-        i s'incorporarà en aquesta mateixa adreça quan estigui disponible.
-      </p>
-      <div class="manual-important big">
-        Pots continuar utilitzant el mòdul amb normalitat. Aquesta pàgina provisional evita errors
-        d'accés mentre es completa la nova web de PACient Actiu.
+      <h2 data-i18n="manual.resp.whatTitle">Què permet registrar?</h2>
+      <div class="quick-steps four">
+        <div><span>1</span><strong data-i18n="manual.resp.typeSpo2">Saturació O2 i pols</strong></div>
+        <div><span>2</span><strong data-i18n="manual.resp.typeFev6">Espiro FEV1/FEV6</strong></div>
+        <div><span>3</span><strong data-i18n="manual.resp.typeFvc">Espiro FEV1/FVC</strong></div>
+        <div><span>4</span><strong data-i18n="manual.resp.typePef">Pic de flux (PEF)</strong></div>
       </div>
+      <div class="manual-note" data-i18n="manual.resp.whatNote">També pots anotar <strong>símptomes o crisis</strong> (tos, ofec, una infecció…). Si no fas servir alguna mesura, la pots amagar a Ajustos.</div>
+    </section>
+
+    <section class="manual-section">
+      <h2 data-i18n="manual.resp.registerTitle">Com fer un registre</h2>
+
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/respiratori_entry.webp" alt="Fitxa d’entrada de saturació" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.resp.entryTitle">1. Una sola fitxa per lectura</h3>
+          <p data-i18n="manual.resp.entryText">Prem la targeta de la mesura. Els valors que dona l’aparell en una mateixa lectura s’entren junts: per exemple, <strong>SpO2 i pols</strong> del pulsioxímetre, o <strong>FEV1 i FEV6</strong> de l’espiròmetre. La ràtio (FEV1/FEV6 o FEV1/FVC) es calcula automàticament.</p>
+          <div class="manual-note" data-i18n="manual.resp.deviceNote">Al camp <strong>Aparell</strong> pots indicar amb quin aparell has fet la mesura (per exemple, PiKo-6 o el pulsioxímetre). L’app recorda el darrer que has utilitzat.</div>
+        </div>
+      </div>
+
+      <div class="manual-block text-only">
+        <div>
+          <h3 data-i18n="manual.resp.zoneTitle">2. Zona de color (opcional)</h3>
+          <p data-i18n="manual.resp.zoneText">Si el teu espiròmetre mostra una zona de color (verd, groc o vermell), la pots anotar a la mateixa fitxa.</p>
+        </div>
+      </div>
+
+      <div class="manual-block reverse">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/respiratori_register.webp" alt="Historial respiratori" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.resp.historyTitle">3. Historial</h3>
+          <p data-i18n="manual.resp.historyText">Les targetes mostren la darrera lectura i l’historial les agrupa per dies. Prem un registre per modificar-lo o eliminar-lo.</p>
+        </div>
+      </div>
+
     </section>
 
     <section class="manual-section alt">
-      <h2>Ajuda</h2>
-      <p>
-        Si necessites informació general sobre PAC Salut, torna al manual principal des de l'enllaç superior.
-      </p>
+      <h2 data-i18n="manual.resp.chartsTitle">Gràfics i informes</h2>
+
+      <div class="manual-block text-only">
+        <div>
+          <h3 data-i18n="manual.resp.evolutionTitle">Evolució</h3>
+          <p data-i18n="manual.resp.chartsText">Als gràfics cada valor té la seva línia. En espirometria es mostra la <strong>millor lectura</strong> de cada període; en saturació i pols, la <strong>mitjana</strong>.</p>
+          <p data-i18n="manual.resp.reportsText">L’informe mostra un resum (millor lectura en espirometria, mitjana en saturació i pols), l’última lectura i la llista de lectures amb data, hora, valors, zona i aparell. El pots exportar en PDF o CSV.</p>
+        </div>
+      </div>
+
+      <div class="manual-important big" data-i18n="manual.resp.finalTip">Segueix les instruccions del fabricant i del teu professional sanitari per fer les mesures. Si tens dificultat per respirar o una saturació baixa, contacta amb el teu equip sanitari o amb els serveis d’urgència.</div>
+
     </section>
+
   </main>
+
   <div id="site-footer"></div>
+
   <script src="../assets/js/i18n.js"></script>
   <script src="../assets/js/layout.js"></script>
   <script>

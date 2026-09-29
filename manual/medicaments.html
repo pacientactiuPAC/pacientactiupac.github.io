@@ -3,43 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Manual Medicaments - PACient Actiu</title>
+
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/manual.css" />
 </head>
+
 <body>
   <div id="site-header"></div>
-  <main class="manual-container">
-    <a class="back-link" href="index.html">← Tornar al manual</a>
 
-    <section class="manual-hero">
+  <main class="manual-container">
+
+    <a class="back-link" href="index.html" data-i18n="manual.back">← Tornar al manual</a>
+
+    <section class="manual-hero uro">
       <div>
-        <p class="manual-kicker">Mòdul Medicaments</p>
-        <h1>Control de medicació</h1>
-        <p>Registra i consulta la medicació habitual i el seu seguiment.</p>
+        <p class="manual-kicker" data-i18n="manual.med.kicker">Mòdul Medicaments</p>
+        <h1 data-i18n="manual.med.title">Manual de Medicaments</h1>
+        <p data-i18n="manual.med.subtitle">Guia pràctica per portar la teva pauta de medicació, registrar preses i generar un informe per al metge.</p>
       </div>
+      <img src="../assets/img/manual/medicaments_pauta.webp" alt="Pantalla de pauta de Medicaments" />
     </section>
 
     <section class="manual-card">
-      <h2>Manual en preparació</h2>
-      <p>
-        Aquest mòdul forma part de la nova versió de PAC Salut. El manual complet s'està preparant
-        i s'incorporarà en aquesta mateixa adreça quan estigui disponible.
-      </p>
-      <div class="manual-important big">
-        Pots continuar utilitzant el mòdul amb normalitat. Aquesta pàgina provisional evita errors
-        d'accés mentre es completa la nova web de PACient Actiu.
+      <h2 data-i18n="manual.med.twoWaysTitle">Dues maneres de registrar</h2>
+      <div class="quick-steps">
+        <div><span>1</span><strong data-i18n="manual.med.wayRegimen">Tractament (inici → fi)</strong></div>
+        <div><span>2</span><strong data-i18n="manual.med.wayDose">Presa puntual</strong></div>
       </div>
+      <div class="manual-note" data-i18n="manual.med.twoWaysNote">Un <strong>tractament</strong> es registra un sol cop quan comença i queda vigent fins que el finalitzes: no cal apuntar-lo cada dia. Una <strong>presa puntual</strong> serveix per a medicaments esporàdics (per exemple, un antiàcid o un analgèsic) o per als tractaments en què vols registrar cada presa.</div>
+    </section>
+
+    <section class="manual-section">
+      <h2 data-i18n="manual.med.pautaTitle">Pauta actual</h2>
+
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/medicaments_pauta.webp" alt="Pauta actual de medicació" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.med.pautaViewTitle">1. Consulta la medicació vigent</h3>
+          <p data-i18n="manual.med.pautaViewText">A la pestanya <strong>Pauta</strong>, l’opció <strong>Pauta actual</strong> mostra els medicaments que tens actius avui, separats en <strong>Amb recepta</strong> i <strong>Sense recepta</strong> (vitamines, suplements…). De cada medicament veus des de quan el prens, la dosi i la franja (M matí, T tarda, N nit).</p>
+        </div>
+      </div>
+
+      <div class="manual-block text-only">
+        <div>
+          <h3 data-i18n="manual.med.actionsTitle">2. Afegeix, modifica o finalitza</h3>
+          <ul>
+            <li data-i18n="manual.med.actionAdd">Prem el botó <strong>+</strong> per afegir un nou tractament o una presa puntual.</li>
+            <li data-i18n="manual.med.actionEdit">Prem un medicament per modificar-lo (dosi, franges, dates…).</li>
+            <li data-i18n="manual.med.actionStop">Prem el botó ⏹ per <strong>finalitzar</strong> un tractament i indica la data de final.</li>
+          </ul>
+          <div class="manual-important" data-i18n="manual.med.actionsImportant">Quan finalitzes un tractament no s’esborra: queda a l’historial amb les seves dates.</div>
+        </div>
+      </div>
+
+      <div class="manual-block text-only">
+        <div>
+          <h3 data-i18n="manual.med.periodTitle">3. Per període</h3>
+          <p data-i18n="manual.med.periodText">L’opció <strong>Per període</strong> mostra els tractaments que han estat vigents en un període (avui, 7 dies, 30 dies, 1 any o el que triïs) i les preses esporàdiques d’aquell període.</p>
+        </div>
+      </div>
+
     </section>
 
     <section class="manual-section alt">
-      <h2>Ajuda</h2>
-      <p>
-        Si necessites informació general sobre PAC Salut, torna al manual principal des de l'enllaç superior.
-      </p>
+      <h2 data-i18n="manual.med.recordsTitle">Registres</h2>
+
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/medicaments_register.webp" alt="Registres de Medicaments" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.med.recordsSubtitle">Fitxa del medicament</h3>
+          <p data-i18n="manual.med.recordsText">A <strong>Registres</strong> hi ha tres targetes: <strong>Presa</strong>, <strong>Pauta</strong> (mostra quants medicaments tens actius i obre la pestanya Pauta) i <strong>Efecte advers</strong>.</p>
+          <p data-i18n="manual.med.recordsForm">A la fitxa tries el medicament (la llista es forma amb els que ja has fet servir; si és nou, escriu-ne el nom), la dosi i la unitat, la franja, si és amb o sense recepta i, en els tractaments, si el seguiment és continu o amb registre diari de preses.</p>
+          <div class="manual-note" data-i18n="manual.med.recordsNote">Quan tries un medicament que ja has utilitzat, l’app et proposa la darrera dosi i unitat.</div>
+        </div>
+      </div>
+
     </section>
+
+    <section class="manual-section">
+      <h2 data-i18n="manual.med.reportsTitle">Informes</h2>
+
+      <div class="manual-block reverse">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/medicaments_reports.webp" alt="Informe de Medicaments" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.med.reportsSubtitle">Informe per al metge</h3>
+          <p data-i18n="manual.med.reportsText">Tria el període i l’informe mostra:</p>
+          <ul>
+            <li data-i18n="manual.med.reportsPauta"><strong>Pauta vigent</strong> a la data final del període.</li>
+            <li data-i18n="manual.med.reportsChanges"><strong>Canvis de pauta</strong> del període: inicis, canvis de dosi i finals.</li>
+            <li data-i18n="manual.med.reportsTaken"><strong>Medicació presa</strong> al període, amb les dates i el nombre de preses.</li>
+          </ul>
+          <div class="manual-important" data-i18n="manual.med.reportsExport">Exporta-ho en PDF per portar la llista actualitzada de medicació a la consulta.</div>
+        </div>
+      </div>
+
+      <div class="manual-important big" data-i18n="manual.med.finalTip">No modifiquis ni deixis cap medicació sense l’indicació del teu metge. Aquest mòdul serveix per tenir la informació ordenada i compartir-la.</div>
+
+    </section>
+
   </main>
+
   <div id="site-footer"></div>
+
   <script src="../assets/js/i18n.js"></script>
   <script src="../assets/js/layout.js"></script>
   <script>

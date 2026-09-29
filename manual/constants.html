@@ -3,43 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Manual Constants - PACient Actiu</title>
+
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/manual.css" />
 </head>
+
 <body>
   <div id="site-header"></div>
-  <main class="manual-container">
-    <a class="back-link" href="index.html">← Tornar al manual</a>
 
-    <section class="manual-hero">
+  <main class="manual-container">
+
+    <a class="back-link" href="index.html" data-i18n="manual.back">← Tornar al manual</a>
+
+    <section class="manual-hero uro">
       <div>
-        <p class="manual-kicker">Mòdul Constants</p>
-        <h1>Seguiment de constants</h1>
-        <p>Registra i consulta les constants de salut des del mòdul Constants.</p>
+        <p class="manual-kicker" data-i18n="manual.constants.kicker">Mòdul Constants</p>
+        <h1 data-i18n="manual.constants.title">Manual de Constants</h1>
+        <p data-i18n="manual.constants.subtitle">Guia pràctica per registrar pes, temperatura, pressió arterial i glucosa, i revisar-ne l’evolució.</p>
       </div>
+      <img src="../assets/img/manual/constants_register.webp" alt="Pantalla de registre de Constants" />
     </section>
 
     <section class="manual-card">
-      <h2>Manual en preparació</h2>
-      <p>
-        Aquest mòdul forma part de la nova versió de PAC Salut. El manual complet s'està preparant
-        i s'incorporarà en aquesta mateixa adreça quan estigui disponible.
-      </p>
-      <div class="manual-important big">
-        Pots continuar utilitzant el mòdul amb normalitat. Aquesta pàgina provisional evita errors
-        d'accés mentre es completa la nova web de PACient Actiu.
+      <h2 data-i18n="manual.constants.whatTitle">Què permet registrar?</h2>
+      <div class="quick-steps four">
+        <div><span>1</span><strong data-i18n="manual.constants.typePes">Pes</strong></div>
+        <div><span>2</span><strong data-i18n="manual.constants.typeTemp">Temperatura</strong></div>
+        <div><span>3</span><strong data-i18n="manual.constants.typePa">Pressió arterial</strong></div>
+        <div><span>4</span><strong data-i18n="manual.constants.typeGlucosa">Glucosa</strong></div>
       </div>
+      <div class="manual-note" data-i18n="manual.constants.whatNote">També pots anotar incidents (per exemple, un mareig o una caiguda) i, si has informat l’alçada a la configuració general, l’app calcula l’IMC a partir del darrer pes.</div>
+    </section>
+
+    <section class="manual-section">
+      <h2 data-i18n="manual.constants.registerTitle">Com fer un registre</h2>
+
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/constants_register.webp" alt="Targetes de registre de Constants" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.constants.cardTitle">1. Prem la targeta de la mesura</h3>
+          <p data-i18n="manual.constants.cardText">Cada mesura té la seva targeta. Prem la targeta (o el signe +) per obrir la fitxa d’entrada. Els botons − i + ajusten el valor, i també el pots escriure directament.</p>
+          <p data-i18n="manual.constants.dateText">A la part superior hi ha la data i l’hora del registre. Pots canviar-les per afegir mesures passades; un segon toc torna a l’hora actual.</p>
+        </div>
+      </div>
+
+      <div class="manual-block text-only">
+        <div>
+          <h3 data-i18n="manual.constants.bpTitle">2. Pressió arterial: bloc de lectures</h3>
+          <p data-i18n="manual.constants.bpText">La pressió arterial es pot registrar com un bloc de diverses lectures (per defecte, 3), amb un temps d’espera entre lectures i un so d’avís quan toca fer la següent. Cada lectura recull sistòlica, diastòlica i pols.</p>
+          <p data-i18n="manual.constants.bpResume">Si surts a mitja presa, l’app t’ofereix continuar el bloc.</p>
+          <div class="manual-important" data-i18n="manual.constants.bpImportant">Segueix les indicacions del teu professional sanitari sobre com i quan prendre la pressió.</div>
+        </div>
+      </div>
+
+      <div class="manual-block text-only">
+        <div>
+          <h3 data-i18n="manual.constants.historyTitle">3. Historial</h3>
+          <p data-i18n="manual.constants.historyText">A sota de les targetes hi ha l’historial, agrupat per dies. Prem un registre per modificar-lo o eliminar-lo. Amb <strong>Filtrar per dia</strong> pots veure només els registres d’un dia concret.</p>
+        </div>
+      </div>
+
     </section>
 
     <section class="manual-section alt">
-      <h2>Ajuda</h2>
-      <p>
-        Si necessites informació general sobre PAC Salut, torna al manual principal des de l'enllaç superior.
-      </p>
+      <h2 data-i18n="manual.constants.configTitle">Configuració</h2>
+
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/constants_config.webp" alt="Configuració de Constants" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.constants.configSubtitle">Variables visibles i pressió arterial</h3>
+          <p data-i18n="manual.constants.configText">A <strong>Ajustos</strong> pots escollir quines variables apareixen a la pantalla de registres. Amagar una variable no esborra cap dada.</p>
+          <p data-i18n="manual.constants.configBp">Per a la pressió arterial pots definir el temps entre lectures (0 = una sola lectura), activar o desactivar el so d’avís i triar el càlcul del bloc: <strong>descartar la 1a lectura</strong> o <strong>mitjana de totes</strong>.</p>
+        </div>
+      </div>
+
     </section>
+
+    <section class="manual-section">
+      <h2 data-i18n="manual.constants.chartsTitle">Gràfics</h2>
+
+      <div class="manual-block reverse">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/constants_charts.webp" alt="Gràfics de Constants" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.constants.chartsSubtitle">Evolució de cada variable</h3>
+          <p data-i18n="manual.constants.chartsText">Cada variable té el seu gràfic, que pots plegar o desplegar. La pressió arterial mostra alhora sistòlica, diastòlica i pols. Pots triar el període i, amb les icones de la capçalera, veure la vista prèvia o exportar els gràfics en PDF.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="manual-section alt">
+      <h2 data-i18n="manual.constants.reportsTitle">Informes</h2>
+
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/constants_reports.webp" alt="Informe de Constants" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.constants.reportsSubtitle">Resum per període</h3>
+          <p data-i18n="manual.constants.reportsText">Tria el període (dia, setmana, mes, any o tot) i navega amb les fletxes. Per a cada variable es mostra un resum: nombre de registres, darrer valor, mitjana i rang.</p>
+          <p data-i18n="manual.constants.reportsDetail">Marca amb la casella les variables que vols incloure al PDF. A la pressió arterial, l’interruptor <strong>Detall</strong> mostra totes les lectures de cada bloc.</p>
+          <div class="manual-important" data-i18n="manual.constants.reportsExport">Exporta l’informe en PDF o CSV amb la icona de la capçalera per compartir-lo amb el teu equip sanitari.</div>
+        </div>
+      </div>
+
+      <div class="manual-important big" data-i18n="manual.common.disclaimer">Aquest mòdul és una eina de seguiment. No substitueix la valoració mèdica ni les indicacions del professional sanitari.</div>
+
+    </section>
+
   </main>
+
   <div id="site-footer"></div>
+
   <script src="../assets/js/i18n.js"></script>
   <script src="../assets/js/layout.js"></script>
   <script>

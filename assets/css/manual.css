@@ -163,6 +163,11 @@ body {
   order: 2;
 }
 
+/* Bloc només de text (sense captura): ocupa tota l'amplada */
+.manual-block.text-only {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .manual-block h3 {
   margin: 0 0 8px;
   font-size: 22px;

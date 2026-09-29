@@ -3,43 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Manual Onco - PACient Actiu</title>
+
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/manual.css" />
 </head>
+
 <body>
   <div id="site-header"></div>
-  <main class="manual-container">
-    <a class="back-link" href="index.html">← Tornar al manual</a>
 
-    <section class="manual-hero">
+  <main class="manual-container">
+
+    <a class="back-link" href="index.html" data-i18n="manual.back">← Tornar al manual</a>
+
+    <section class="manual-hero uro">
       <div>
-        <p class="manual-kicker">Mòdul Onco</p>
-        <h1>Seguiment oncològic</h1>
-        <p>Accés al mòdul de seguiment oncològic de PAC Salut.</p>
+        <p class="manual-kicker" data-i18n="manual.onco.kicker">Mòdul Onco</p>
+        <h1 data-i18n="manual.onco.title">Manual de seguiment oncològic</h1>
+        <p data-i18n="manual.onco.subtitle">Guia pràctica per registrar cada dia els efectes secundaris del tractament i veure com evolucionen al llarg dels cicles.</p>
       </div>
+      <img src="../assets/img/manual/onco_register.webp" alt="Pantalla de registre d’Onco" />
     </section>
 
     <section class="manual-card">
-      <h2>Manual en preparació</h2>
-      <p>
-        Aquest mòdul forma part de la nova versió de PAC Salut. El manual complet s'està preparant
-        i s'incorporarà en aquesta mateixa adreça quan estigui disponible.
-      </p>
-      <div class="manual-important big">
-        Pots continuar utilitzant el mòdul amb normalitat. Aquesta pàgina provisional evita errors
-        d'accés mentre es completa la nova web de PACient Actiu.
+      <h2 data-i18n="manual.onco.objectiveTitle">Objectiu</h2>
+      <p data-i18n="manual.onco.objectiveText">Aquest mòdul ajuda a registrar de manera senzilla els efectes secundaris d’un tractament oncològic (per exemple, quimioteràpia), puntuant cada efecte de 0 a 5.</p>
+      <div class="manual-note" data-i18n="manual.onco.objectiveNote">Cada nivell té la seva definició al costat, perquè la puntuació sigui el més objectiva possible. Així es poden veure patrons dins de cada cicle i comentar-los amb l’equip mèdic.</div>
+    </section>
+
+    <section class="manual-section">
+      <h2 data-i18n="manual.onco.registerTitle">Com fer un registre</h2>
+
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/onco_register.webp" alt="Registres d’Onco" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.onco.dailyTitle">1. Efectes del dia</h3>
+          <p data-i18n="manual.onco.dailyText">Prem <strong>Efectes del dia</strong> per obrir el full diari: hi apareixen tots els efectes actius, agrupats (digestiu, pell, mucoses, psicofísic…). Per a cada efecte tria el nivell de 0 a 5 llegint la definició de cada nivell.</p>
+          <p data-i18n="manual.onco.dailyCount">La targeta mostra quants efectes has puntuat aquell dia i el valor màxim.</p>
+          <div class="manual-important" data-i18n="manual.onco.dailyImportant">Si un efecte no t’ha molestat, marca el nivell 0: així queda constància que l’has revisat.</div>
+        </div>
       </div>
+
+      <div class="manual-block text-only">
+        <div>
+          <h3 data-i18n="manual.onco.cycleTitle">2. Cicle de tractament</h3>
+          <p data-i18n="manual.onco.cycleText">Registra el número de <strong>Cicle</strong> el dia que comença cada cicle (per exemple, el dia de la infusió). Els cicles es mostren com a línies verticals als gràfics i ajuden a veure en quins dies després del tractament apareixen els efectes.</p>
+        </div>
+      </div>
+
+      <div class="manual-block text-only">
+        <div>
+          <h3 data-i18n="manual.onco.incidentTitle">3. Incidents i historial</h3>
+          <p data-i18n="manual.onco.incidentText">Amb <strong>Incident</strong> pots anotar fets importants (una operació, un ingrés, una febre…) amb una etiqueta, una severitat i una nota. Pots marcar-lo com a <strong>resolt</strong> quan s’acabi l’episodi.</p>
+          <p data-i18n="manual.onco.historyText">L’historial mostra tots els registres per dies; prem-ne un per modificar-lo o eliminar-lo.</p>
+        </div>
+      </div>
+
     </section>
 
     <section class="manual-section alt">
-      <h2>Ajuda</h2>
-      <p>
-        Si necessites informació general sobre PAC Salut, torna al manual principal des de l'enllaç superior.
-      </p>
+      <h2 data-i18n="manual.onco.configTitle">Configuració</h2>
+
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/onco_config.webp" alt="Configuració d’Onco" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.onco.configSubtitle">Efectes visibles</h3>
+          <p data-i18n="manual.onco.configText">A <strong>Ajustos</strong> pots activar o desactivar cada efecte segons el teu tractament. Amagar un efecte no esborra cap dada.</p>
+          <div class="manual-note" data-i18n="manual.onco.configNote">Alguns efectes comuns (vòmits, formigueig o adormiment, síndrome mà-peu, sagnat) estan desactivats per defecte; activa’ls si et calen.</div>
+        </div>
+      </div>
+
     </section>
+
+    <section class="manual-section">
+      <h2 data-i18n="manual.onco.chartsTitle">Gràfics</h2>
+
+      <div class="manual-block reverse">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/onco_charts.webp" alt="Gràfics d’Onco" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.onco.chartsSubtitle">Evolució de cada efecte</h3>
+          <p data-i18n="manual.onco.chartsText">Cada efecte té el seu gràfic de 0 a 5. Pots triar el període (setmana, mes, any o tot) i activar les <strong>línies verticals de cicle</strong> per veure l’evolució dins de cada cicle. Amb la icona PDF pots exportar els gràfics.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="manual-section alt">
+      <h2 data-i18n="manual.onco.reportsTitle">Informes</h2>
+
+      <div class="manual-block">
+        <figure class="manual-image phone">
+          <img src="../assets/img/manual/onco_reports.webp" alt="Informe d’Onco" />
+        </figure>
+        <div>
+          <h3 data-i18n="manual.onco.reportsSubtitle">Resum i matriu d’efectes</h3>
+          <p data-i18n="manual.onco.reportsText">A l’informe pots veure, per a cada efecte, el nombre de registres, el darrer valor i la mitjana, i una taula amb el valor màxim per mes o per dia.</p>
+          <p data-i18n="manual.onco.reportsPdf">El PDF inclou una taula de dies × efectes que permet veure d’un cop d’ull quan apareix cada efecte dins del cicle.</p>
+        </div>
+      </div>
+
+      <div class="manual-important big" data-i18n="manual.onco.finalTip">Les definicions dels nivells són orientatives i estan pendents de revisió per especialistes. Aquest mòdul no substitueix la valoració mèdica: davant de qualsevol símptoma important, contacta amb el teu equip sanitari.</div>
+
+    </section>
+
   </main>
+
   <div id="site-footer"></div>
+
   <script src="../assets/js/i18n.js"></script>
   <script src="../assets/js/layout.js"></script>
   <script>
