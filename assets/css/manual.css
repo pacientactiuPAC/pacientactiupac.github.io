@@ -292,6 +292,20 @@ body {
   color: var(--primary);
 }
 
+/* Icona del mòdul a les targetes de l'índex del manual */
+.module-card .module-card-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+/* Captura alta (pantalla principal amb els 8 mòduls) */
+.manual-hero img.hero-tall {
+  max-height: 460px;
+}
+
 .back-link {
   display: inline-block;
   margin-bottom: 16px;
